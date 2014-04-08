@@ -1,0 +1,55 @@
+---
+ddocs:   
+- ddname: content
+  views: 
+    - vname: cache
+      map: >
+        function (doc, meta) {
+          if (meta.id.indexOf("navcache::") == 0 || meta.id.indexOf("bread::") == 0 || meta.id.indexOf("docs-nav-tree") == 0) {
+            emit(meta.id, null);
+          }
+        }      
+      reduce: >
+        _count
+    - vname: questions_unanswered
+      map: >
+        function (doc, meta) {
+          if (doc.doctype == "question" && parseInt(doc.answer_count) == 0) {
+            d = new Date(0);
+            d.setUTCSeconds(doc.updated_at);
+            da = dateToArray(d);
+            emit(da, null);
+          }
+        }      
+      reduce: >
+        _count     
+    - vname: questions_updated
+      map: >
+        function (doc, meta) {
+          if (doc.doctype == "question") {
+            d = new Date(0);
+            d.setUTCSeconds(doc.updated_at);
+            da = dateToArray(d);
+            emit(da, null);
+          }
+        }      
+      reduce: >
+        _count           
+    - vname: videos
+      map: >
+        function (doc, meta) {
+          if (doc.doctype == "video" && doc.subtype != "training") {
+            emit(meta.id, null);
+          }
+        }     
+      reduce: >
+        _count
+    - vname: training
+      map: >
+        function (doc, meta) {
+          if (doc.doctype == "video" && doc.subtype == "training") {
+            emit(meta.id, null);
+          }
+        }     
+      reduce: >
+        _count

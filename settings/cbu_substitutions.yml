@@ -1,0 +1,78 @@
+# these are individual words, replaced by a single string
+firstpass: 
+  - originals: devguide Devguide
+    target: Developer's Guide
+    
+  - originals: sdk Sdk
+    target: SDK
+    
+  - originals: php Php
+    target: PHP
+    
+  - originals: Net net
+    target: .Net
+    
+  - originals: Faq faq Faqs faqs FAQs FAQS
+    target: FAQ
+  
+  - originals: api Api Apis apis APIs APIS
+    target: API
+    
+  - originals: Mvc mvc 
+    target: MVC
+    
+  - originals: Mvcc mvcc
+    target: MVCC
+    
+  - originals: json Json
+    target: JSON
+    
+  - originals: cas Cas
+    target: CAS
+  
+  - originals: sql Sql
+    target: SQL
+    
+  - originals: Cbl cbl
+    target: CBL
+  
+  - originals: Ios ios IOS
+    target: iOS
+    
+  - originals: Asp asp
+    target: ASP
+    
+  - originals: xdcr Xdcr
+    target: XDCR
+    
+  - originals: Libcouchbase
+    target: libcouchbase
+    
+# these must be single string replaces (multi word with spaces)
+secondpass:
+  - original: SDK C
+    target: C SDK
+    
+  - original: SDK Python
+    target: Python SDK
+
+  - original: SDK PHP
+    target: PHP SDK    
+  
+  - original: SDK Ruby
+    target: Ruby SDK
+    
+  - original: SDK Java
+    target: Java SDK
+    
+  - original: Developer S
+    target: Developer's
+    
+  - original: SDK .Net
+    target: .Net SDK
+    
+  - original: ASP .Net
+    target: ASP.NET
+
+# words that should be converted back to all lowercase (Capitalize First Letter in List)
+lowercase: The And To For With In A

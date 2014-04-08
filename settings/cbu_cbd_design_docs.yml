@@ -1,0 +1,23 @@
+---
+ddocs:   
+- ddname: nav
+  views: 
+    - vname: hierarchy
+      map: >
+        function (doc, meta) {
+          if (doc.doctype == "nav") {
+            emit([doc.nav_level, doc.nav_order]);
+          }
+        }
+      reduce: 
+      
+
+- ddname: test
+  views: 
+  - vname: blah
+    map: >
+      function (doc, meta) {
+        emit(meta.id)
+      }
+    reduce: >
+      _count

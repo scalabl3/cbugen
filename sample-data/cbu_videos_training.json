@@ -1,0 +1,331 @@
+{
+  "samples": {
+    "training::couchbase101": {
+      "id": "couchbase101",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "server",
+      "course": "Couchbase 101",
+      "nav_title": "Server Fundamentals",
+      "title": "Fundamentals of Couchbase Server",
+      "subtitle": "Architecture, Installation, Configuration and Monitoring",
+      "description": "* Couchbase Architecture\n* Setup parameters and options\n* Admin Console\n* Monitoring Graphs and what they mean\n* Buckets\n* RAM/CPU/IO Writers\n* Scaling, Clustering and Rebalancing\n* Couchbase in the Cloud\n* Using AMI installations\n* References to Docs, Communities, etc.",
+      "tags": [
+        "architecture",
+        "server",
+        "intall",
+        "installation",
+        "monitor",
+        "monitoring",
+        "config",
+        "configure",
+        "configuration",
+        "setup",
+        "mac",
+        "aws",
+        "ec2",
+        "windows"
+      ],
+      "posted_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1389131733
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1387576532
+      },
+      "link": "/training/couchbase101",
+      "source": {
+        "vimeo": {
+          "link": "http://vimeo.com/82336316",
+          "video_id": 82336316,
+          "title": "Couchbase & Elasticsearch Integration Setup and Config",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/82336316\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+        },
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v=GsrZkNSq8SE",
+          "video_id": "GsrZkNSq8SE",
+          "title": "Online Training: Couchbase 101 - Installation and Configuration",
+          "length": "1:07:12",
+          "length_mins": 67,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/GsrZkNSq8SE?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        }
+      },
+      "views": 5,
+      "favorites": 9,
+      "ratings": 22,
+      "rating": 4.8
+    },
+    "training::couchbase102": {
+      "id": "couchbase102",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "server",
+      "course": "Couchbase 102",
+      "nav_title": "SDK Operations",
+      "title": "SDK Operations",
+      "subtitle": "Operations for Connecting to Couchbase and Storing & Retrieving Data",
+      "description": "* Understanding how to setup SDK for languages and different platforms\n* JSON serialization/deserialization\n* How Operations work in Couchbase Architecture\n* Making a Connection to Couchbase\n* Document Operations in Couchbase\n* Optimistic Concurrency\n* Pessimistic Concurrency\n* Durability with Observe\n",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/training/couchbase102",
+      "source": {
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v= xokOBl4uNQA",
+          "video_id": "xokOBl4uNQA",
+          "title": "Online Training: Couchbase 102 - SDK Operations",
+          "length": "58:03",
+          "length_mins": 58,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/xokOBl4uNQA?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        },
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    },
+    "training::couchbase103": {
+      "id": "couchbase103",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "server",
+      "course": "Couchbase 103",
+      "nav_title": "Document Modeling",
+      "title": "Document Modeling",
+      "subtitle": "Understand data storage strategies and patterns",
+      "description": "* Differences with RDBMS\n* ORM's and ActiveRecord\n* Simple vs Complex Data Types\n* JSON serialization/deserialization\n* Key Patterns\n* Advanced Operations\n* Dynamic Schema Change Strategies\n* Document Tips that help with Views\n",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/training/couchbase103",
+      "source": {
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v=ZfUj5-humoU",
+          "video_id": "ZfUj5-humoU",
+          "title": "Online Training: Couchbase 103 - Modeling",
+          "length": "55:33",
+          "length_mins": 55,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/ZfUj5-humoU?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        },
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    },
+    "training::couchbase104": {
+      "id": "couchbase104",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "server",
+      "course": "Couchbase 104",
+      "nav_title": "Views and Indexing",
+      "title": "Views and Indexing",
+      "subtitle": "Learn about Views -- Secondary Indexes created through Map/Reduce Technique",
+      "description": "Learn the architecture and use of Views, the structure of Map-Reduce functions, design documents, querying views and view query parameters, primary aggregate reduces and grouping, eventual consistency of indexes and strategies of use.\n\n* What are Indexes\n* What is a Map-Reduce\n* Understanding Design Documents\n* Admin Console Overview\n* Anatomy of Map Functions\n* Batch Processing\n* Range Querying, Index-Key Querying, Set Querying\n* RDBMS Queries vs. Map-Reduce Queries\n* Grouping and Group Level\n* Eventual Consistency and Stale Parameter\n* Tips for Creating Views and Sandboxing Tests\n",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/training/couchbase104",
+      "source": {
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v=AecSojHzSvQ",
+          "video_id": "ZfUj5-humoU",
+          "title": "Online Training: Couchbase 104 - Views and Indexing",
+          "length": "1:00",
+          "length_mins": 55,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/AecSojHzSvQ?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        },
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    },
+    "training::couchbase105": {
+      "id": "couchbase105",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "server",
+      "course": "Couchbase 105",
+      "nav_title": "XDCR and Elasticsearch",
+      "title": "Cross-Data-Center-Replication (XDCR) and Elasticsearch Integration",
+      "subtitle": "Learn about XDCR architecture and strategies as well as Integrating Elasticsearch",
+      "description": "Learn the architectural principles behind Cross Datacenter Replication (XDCR), configuration parameters, atomicity implications, and some use cases. Learn how to integrate Couchbase and Elasticsearch for flexible full text searching to compliment Couchbase Views with additional query flexibility.\n\n### CROSS DATACENTER REPLICATION ###\n\n* Cross-Data-Center-Replication (XDCR) Architecture\n* Setup XDCR between two clusters\n* XDCR Configuration Parameters\n\n### ELASTICSEARCH ###\n\n* Elasticsearch (ES) Integration setup\n* Setup Couchbase Transport plugin in ES\n* Create replication into ES\n* Run Queries against ES and retrieve results against Couchbase",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/training/couchbase105",
+      "source": {
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v=zkkgGG13nZg",
+          "video_id": "zkkgGG13nZg",
+          "title": "Online Training: Couchbase 105 - XDCR and Elasticsearch",
+          "length": "54:44",
+          "length_mins": 55,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/zkkgGG13nZg?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        },
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    },
+    "training::mobile101": {
+      "id": "mobile101",
+      "doctype": "video",
+      "subtype": "training",
+      "platform": "mobile",
+      "course": "Couchbase Mobile 101",
+      "nav_title": "Mobile Fundamentals",
+      "title": "Mobile Fundamentals",
+      "subtitle": "Learn about Couchbase Sync Gateway, Couchbase Lite and Synchronizing across Devices",
+      "description": "Learn the architecture around the new Couchbase mobile solution using Couchbase, Couchbase Sync Gateway and Couchbase Lite. Understand how it all fits together, and how data is moved from server to devices and back. Learn about sync functions and the parameters for setting up sync channels and permissions. Demo will be creating an instance of Couchbase/Sync Gateway on CouchbaseCloud.com and setting up and running a sample application on a mobile simulator.\n\n* Architecture of Couchbase Mobile\n* Understanding Sync Gateway\n* Data movement to/from Couchbase Lite\n* Understanding Sync Functions\n* Setup CouchbaseCloud account\n* Run Demo Application on simulator\n",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/training/mobile101",
+      "source": {
+        "youtube": {
+          "link": "https://www.youtube.com/watch?v=VXn4Ufm_J-g",
+          "video_id": "VXn4Ufm_J-g",
+          "title": "Online Training: Couchbase Mobile 101 - Mobile Fundamentals",
+          "length": "54:44",
+          "length_mins": 55,
+          "user": "CouchbaseVideo",
+          "user_link": "https://www.youtube.com/user/CouchbaseVideo",
+          "embed": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/VXn4Ufm_J-g?rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
+        },
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    }
+  }
+}

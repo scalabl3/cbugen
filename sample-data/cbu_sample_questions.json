@@ -1,0 +1,85 @@
+{
+  "count": 3,
+  "samples": [
+    {
+      "id": 1001,
+      "doctype": "question",
+      "context": "freeform",
+      "subject": "Setup Couchbase on RedHat",
+      "q": "What pre-requisites are needed to setup **Couchbase** on RedHat?",
+      "product": "couchbase server",
+      "product_version": 2.2,
+      "platform": "redhat",
+      "platform_version": 6.1,
+      "sdk": null,
+      "sdk_version": null,
+      "author": {
+        "uid": 1001,
+        "name": "Jasdeep Jaitla",
+        "username": "scalabl3"
+      },
+      "created_at": 112332323,
+      "updated_at": 112332323,
+      "tags": [
+        "server2.2",
+        "redhat",
+        "install"
+      ],
+      "answer_count": 0,
+      "score": 0,
+      "view_count": 0
+    },
+    {
+      "id": 1002,
+      "doctype": "question",
+      "context": "freeform",
+      "subject": "Timeouts with Ruby",
+      "q": "I am getting timeouts when I run the following ruby code:\n\n```ruby\ncb = Couchbase.new\n```\n\nError: Timeout\n\n",
+      "product": "couchbase server",
+      "product_version": 2,
+      "sdk": "ruby",
+      "sdk_version": 1.33,
+      "author": {
+        "uid": 1001,
+        "name": "Jasdeep Jaitla",
+        "username": "scalabl3"
+      },
+      "created_at": 112332323,
+      "updated_at": 112332323,
+      "tags": [
+        "server2.0",
+        "redhat",
+        "install"
+      ],
+      "answer_count": 0,
+      "score": 0,
+      "view_count": 0
+    },
+    {
+      "id": 1003,
+      "doctype": "question",
+      "context": "freeform",
+      "subject": "Update Sync Function",
+      "q": "How do you update the current sync function and apply a new one?",
+      "product": "syncgateway",
+      "product_version": 0.91,
+      "sdk": null,
+      "sdk_version": null,
+      "author": {
+        "uid": 1001,
+        "name": "Jasdeep Jaitla",
+        "username": "scalabl3"
+      },
+      "created_at": 112332323,
+      "updated_at": 112332323,
+      "tags": [
+        "mobile",
+        "syncgateway",
+        "install"
+      ],
+      "answer_count": 0,
+      "score": 0,
+      "view_count": 0
+    }
+  ]
+}

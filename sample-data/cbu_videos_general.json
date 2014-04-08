@@ -1,0 +1,89 @@
+{
+  "samples": {
+    "vv10001": {
+      "id": "vv10001",
+      "doctype": "video",
+      "subtype": "general",
+      "title": "Couchbase & Elasticsearch",
+      "subtitle": "Integration Setup and Config",
+      "tags": [
+        "couchbase",
+        "elasticsearch",
+        "setup",
+        "config",
+        "installation",
+        "integration"
+      ],
+      "posted_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1389131733
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1387576532
+      },
+      "link": "/v/vv10001",
+      "source": {
+        "vimeo": {
+          "link": "http://vimeo.com/82336316",
+          "video_id": 82336316,
+          "title": "Couchbase & Elasticsearch Integration Setup and Config",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/82336316\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/82336316\">Couchbase & Elasticsearch Integration Setup and Config</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        },
+        "youtube": {
+          
+        }
+      },
+      "views": 5,
+      "favorites": 9,
+      "ratings": 22,
+      "rating": 4.8
+    },
+    "vv10002": {
+      "id": "vv10002",
+      "doctype": "video",
+      "subtype": "general",
+      "title": "Couchbase & Elasticsearch",
+      "subtitle": "Integration Setup and Config",
+      "tags": [
+        "couchbase",
+        "sdk",
+        "training",
+        "operations",
+        "couchbase102"
+      ],
+      "posted": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1388699732
+      },
+      "created_by": {
+        "user_id": 12345,
+        "name": "Jasdeep Jaitla",
+        "timestamp": 1384120532
+      },
+      "link": "/v/vv10002",
+      "source": {
+        "vimeo": {
+          "link": "https://vimeo.com/77833009",
+          "video_id": 77833009,
+          "title": "Couchbase 102: SDK Operations",
+          "user": "scalabl3",
+          "user_link": "https://vimeo.com/scalabl3",
+          "embed": "<iframe src=\"//player.vimeo.com/video/77833009\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href=\"http://vimeo.com/77833009\">Couchbase 102: SDK Operations</a> from <a href=\"http://vimeo.com/scalabl3\">scalabl3</a> on <a href=\"https://vimeo.com\">Vimeo</a>.</p>"
+        },
+        "youtube": {
+          
+        }
+      },
+      "views": 25,
+      "favorites": 16,
+      "ratings": 98,
+      "rating": 4.3
+    }
+  }
+}

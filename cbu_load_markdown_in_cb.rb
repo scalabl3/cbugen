@@ -26,7 +26,7 @@ CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 Dir.chdir(".")
 GROOT = Dir.pwd
 
-content_root = "#{CBU_ROOT}/docs-transform"
+content_root = "#{GROOT}/docs-transform"
 Dir.chdir(content_root)
 CROOT = Dir.pwd
 

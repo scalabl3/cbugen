@@ -12,13 +12,13 @@ Dotenv.load ".env"
 CB_IP=ENV['cbu_couchbase_servers'].split(",")
 CB_SERVERS=[]
 CB_IP.each do |ip|
-	CB_SERVERS << "http://#{ip}"
+	CB_SERVERS << "http://#{ip}:8091/"
 end
-
-START = Time.now.to_i
 
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
+
+START = Time.now.to_i
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)

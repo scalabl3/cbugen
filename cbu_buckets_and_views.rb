@@ -179,6 +179,10 @@ begin
   puts CBD.inspect
   #CBD.flush
 	#CBU.flush
+
+rescue Couchbase::Error::Timeout
+	create_cbdocs_bucket  
+  CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 rescue Couchbase::Error::BucketNotFound
   create_cbdocs_bucket  
   CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
@@ -197,6 +201,10 @@ end
 begin
 	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 	puts CBU.inspect
+	
+rescue Couchbase::Error::Timeout
+	create_cbu_bucket
+	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 rescue Couchbase::Error::BucketNotFound
 	create_cbu_bucket
 	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')

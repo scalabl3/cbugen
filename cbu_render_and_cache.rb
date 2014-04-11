@@ -9,7 +9,11 @@ require 'parallel'
 require 'awesome_print'
 
 Dotenv.load ".env"
-CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+CB_IP=ENV['cbu_couchbase_servers'].split(",")
+CB_SERVERS=[]
+CB_IP.each do |ip|
+	CB_SERVERS << "http://#{ip}"
+end
 
 START = Time.now.to_i
 
@@ -19,10 +23,10 @@ CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
 
-require '../university.couchbase.com/config/initializers/redcarpet_rouge_patches.rb'
-require '../university.couchbase.com/app/models/markdown_render.rb'
-require '../university.couchbase.com/app/models/docs_nav_tree.rb'
-require '../university.couchbase.com/app/models/render_nav_tree.rb'
+require "#{CBU_RAILSROOT}/config/initializers/redcarpet_rouge_patches.rb"
+require "#{CBU_RAILSROOT}/app/models/markdown_render.rb"
+require "#{CBU_RAILSROOT}/app/models/docs_nav_tree.rb"
+require "#{CBU_RAILSROOT}/app/models/render_nav_tree.rb"
 
 DocsNavTree.generate
 RenderNavTree.generate

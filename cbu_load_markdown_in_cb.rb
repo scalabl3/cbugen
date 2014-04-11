@@ -14,7 +14,12 @@ require 'base64'
 require 'dotenv'
 
 Dotenv.load ".env"
-CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+CB_IP=ENV['cbu_couchbase_servers'].split(",")
+CB_SERVERS=[]
+CB_IP.each do |ip|
+	CB_SERVERS << "http://#{ip}"
+end
+
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 

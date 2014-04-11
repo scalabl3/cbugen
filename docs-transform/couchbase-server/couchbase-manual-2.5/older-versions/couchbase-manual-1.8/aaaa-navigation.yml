@@ -1,0 +1,113 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: administration-basics
+  type: markdown
+  nav_title: Administration Basics
+  content_footers: 
+
+- !omap
+  source: administration-tasks
+  type: markdown
+  nav_title: Administration Tasks
+  content_footers: 
+
+- !omap
+  source: appendix-faqs
+  type: markdown
+  nav_title: Appendix FAQ
+  content_footers: 
+
+- !omap
+  source: appendix-licenses
+  type: markdown
+  nav_title: Appendix Licenses
+  content_footers: 
+
+- !omap
+  source: appendix-limits
+  type: markdown
+  nav_title: Appendix Limits
+  content_footers: 
+
+- !omap
+  source: appendix-release-notes
+  type: markdown
+  nav_title: Appendix Release Notes
+  content_footers: 
+
+- !omap
+  source: appendix-uninstalling-couchbase-server
+  type: markdown
+  nav_title: Appendix Uninstalling Couchbase Server
+  content_footers: 
+
+- !omap
+  source: best-practices
+  type: markdown
+  nav_title: Best Practices
+  content_footers: 
+
+- !omap
+  source: command-line-interface-for-administration
+  type: markdown
+  nav_title: Command Line Interface for Administration
+  content_footers: 
+
+- !omap
+  source: couchbase-architecture
+  type: markdown
+  nav_title: Couchbase Architecture
+  content_footers: 
+
+- !omap
+  source: couchbase-server-manual-1.8
+  type: markdown
+  nav_title: Couchbase Server Manual 1.8
+  content_footers: 
+
+- !omap
+  source: developing-with-couchbase
+  type: markdown
+  nav_title: Developing with Couchbase
+  content_footers: 
+
+- !omap
+  source: getting-started
+  type: markdown
+  nav_title: Getting Started
+  content_footers: 
+
+- !omap
+  source: introduction-to-couchbase-server
+  type: markdown
+  nav_title: Introduction to Couchbase Server
+  content_footers: 
+
+- !omap
+  source: monitoring-couchbase
+  type: markdown
+  nav_title: Monitoring Couchbase
+  content_footers: 
+
+- !omap
+  source: rest-api-for-administration
+  type: markdown
+  nav_title: Rest API for Administration
+  content_footers: 
+
+- !omap
+  source: troubleshooting
+  type: markdown
+  nav_title: Troubleshooting
+  content_footers: 
+
+- !omap
+  source: web-console-for-administration
+  type: markdown
+  nav_title: Web Console for Administration
+  content_footers: 

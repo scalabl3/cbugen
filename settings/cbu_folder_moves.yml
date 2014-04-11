@@ -1,0 +1,81 @@
+folder_moves:
+  - target: couchbase-elastic-search
+    source: couchbase-elastic-search
+  - target: couchbase-development
+    moves: 
+      - source: couchbase-sdk-c-2.3
+        rename: c-(v=2.3)
+        older_versions:
+          - 2.2
+          - 2.1
+          - 2.0
+          - 1.0
+      - source: couchbase-sdk-java-1.3
+        rename: java-(v=1.3)
+        older_versions:
+          - 1.2
+          - 1.1
+          - 1.0
+      - source: couchbase-sdk-net-1.3
+        rename: net-(v=1.3)
+        older_versions:
+          - 1.2
+          - 1.1
+          - 1.0
+      - source: couchbase-sdk-php-1.2
+        rename: php-(v=1.2)
+        older_versions:
+          - 1.1
+          - 1.0
+      - source: couchbase-sdk-python-1.2
+        rename: python-(v=1.2)
+        older_versions:
+          - 1.1
+          - 1.0
+      - source: couchbase-sdk-ruby-1.3
+        rename: ruby-(v=1.3)
+        older_versions:
+          - 1.2
+          - 1.1
+          - 1.0
+      - source: couchbase-devguide-2.5
+        rename: devguide-(v=2.5)
+        older_versions:
+          - 2.2
+          - 2.1
+          - 2.0
+          - 1.8
+      - source: couchbase-sdk-node-1.2
+        rename: nodejs-(v=1.2)
+        older_versions:
+          - 1.1
+          - 1.0
+  - target: couchbase-query-language
+    moves: 
+      - source: couchbase-query-language-0.3
+        older_versions:
+          - 0.1
+  - target: couchbase-server
+    moves:
+      - source: couchbase-manual-2.5
+        older_versions:
+          - 2.2
+          - 2.1
+          - 2.0
+          - 1.8
+  - target: hadoop-plugin
+    moves:
+      - source: hadoop-plugin-1.1
+        older_versions:
+          - 1.0
+  - target: moxi
+    moves:
+      - source: moxi-manual-1.8
+      - source: moxi-manual-1.7
+      - source: moxi-guide
+  - target: couchbase-mobile
+    moves:
+      - source: couchbase-lite
+      - source: sync-gateway
+  
+      

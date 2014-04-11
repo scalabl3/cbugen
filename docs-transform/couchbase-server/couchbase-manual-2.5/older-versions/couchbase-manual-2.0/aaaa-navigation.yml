@@ -1,0 +1,119 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: administration-basics
+  type: markdown
+  nav_title: Administration Basics
+  content_footers: 
+
+- !omap
+  source: administration-tasks
+  type: markdown
+  nav_title: Administration Tasks
+  content_footers: 
+
+- !omap
+  source: appendix-couchbase-sample-buckets
+  type: markdown
+  nav_title: Appendix Couchbase Sample Buckets
+  content_footers: 
+
+- !omap
+  source: appendix-faqs
+  type: markdown
+  nav_title: Appendix FAQ
+  content_footers: 
+
+- !omap
+  source: appendix-licenses
+  type: markdown
+  nav_title: Appendix Licenses
+  content_footers: 
+
+- !omap
+  source: appendix-limits
+  type: markdown
+  nav_title: Appendix Limits
+  content_footers: 
+
+- !omap
+  source: appendix-release-notes
+  type: markdown
+  nav_title: Appendix Release Notes
+  content_footers: 
+
+- !omap
+  source: appendix-troubleshooting-views-technical-background-
+  type: markdown
+  nav_title: Appendix Troubleshooting Views Technical Background
+  content_footers: 
+
+- !omap
+  source: appendix-uninstalling-couchbase-server
+  type: markdown
+  nav_title: Appendix Uninstalling Couchbase Server
+  content_footers: 
+
+- !omap
+  source: best-practices
+  type: markdown
+  nav_title: Best Practices
+  content_footers: 
+
+- !omap
+  source: command-line-interface-for-administration
+  type: markdown
+  nav_title: Command Line Interface for Administration
+  content_footers: 
+
+- !omap
+  source: couchbase-server-manual-2.0
+  type: markdown
+  nav_title: Couchbase Server Manual 2.0
+  content_footers: 
+
+- !omap
+  source: installing-and-upgrading
+  type: markdown
+  nav_title: Installing and Upgrading
+  content_footers: 
+
+- !omap
+  source: introduction-to-couchbase-server
+  type: markdown
+  nav_title: Introduction to Couchbase Server
+  content_footers: 
+
+- !omap
+  source: monitoring-couchbase
+  type: markdown
+  nav_title: Monitoring Couchbase
+  content_footers: 
+
+- !omap
+  source: troubleshooting
+  type: markdown
+  nav_title: Troubleshooting
+  content_footers: 
+
+- !omap
+  source: using-the-rest-api
+  type: markdown
+  nav_title: Using the Rest API
+  content_footers: 
+
+- !omap
+  source: using-the-web-console
+  type: markdown
+  nav_title: Using the Web Console
+  content_footers: 
+
+- !omap
+  source: views-and-indexes
+  type: markdown
+  nav_title: Views and Indexes
+  content_footers: 

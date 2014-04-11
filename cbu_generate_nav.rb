@@ -35,7 +35,7 @@ CBU_ROOT = Dir.pwd
 
 SUBS = Map.new(YAML.load_file("#{CBU_ROOT}/settings/cbu_substitutions.yml"))
 
-content_root = "../docs-ng/source_content"
+content_root = "#{CBU_ROOT}/docs-transform"
 Dir.chdir(content_root)
 CROOT = Dir.pwd
 
@@ -49,7 +49,7 @@ CONTENT_LINK_PREFIX = "d"
 def process_navigation_name(folder_root)
 	#folder_root.gsub(/-/, ' ').split.map(&:capitalize).join(' ').gsub(/Net/, '.Net').gsub(/Php/, 'PHP').gsub(/Sdk/, 'SDK')
 	
-	p = folder_root.dup.gsub(/-/, ' ').split.map(&:capitalize).join(' ')
+	p = folder_root.dup.gsub(/-/, ' ').split.map(&:capitalize).join(' ').gsub(/=/, '-')
 	
 	p_words = p.split(" ")
 	

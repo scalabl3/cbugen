@@ -1,0 +1,47 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: couchbase-development
+  type: folder
+  nav_title: Couchbase Development
+  content_footers: 
+
+- !omap
+  source: couchbase-elastic-search
+  type: folder
+  nav_title: Couchbase Elastic Search
+  content_footers: 
+
+- !omap
+  source: couchbase-mobile
+  type: folder
+  nav_title: Couchbase Mobile
+  content_footers: 
+
+- !omap
+  source: couchbase-query-language
+  type: folder
+  nav_title: Couchbase Query Language
+  content_footers: 
+
+- !omap
+  source: couchbase-server
+  type: folder
+  nav_title: Couchbase Server
+  content_footers: 
+
+- !omap
+  source: hadoop-plugin
+  type: folder
+  nav_title: Hadoop Plugin
+  content_footers: 
+
+- !omap
+  source: moxi
+  type: folder
+  nav_title: Moxi
+  content_footers: 

@@ -1,0 +1,95 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: sg-1000-intro
+  type: markdown
+  nav_title: Sg 1000 Intro
+  content_footers: 
+
+- !omap
+  source: sg-2000-getting-started
+  type: markdown
+  nav_title: Sg 2000 Getting Started
+  content_footers: 
+
+- !omap
+  source: sg-3000-administer
+  type: markdown
+  nav_title: Sg 3000 Administer
+  content_footers: 
+
+- !omap
+  source: sg-3100-authorize
+  type: markdown
+  nav_title: Sg 3100 Authorize
+  content_footers: 
+
+- !omap
+  source: sg-4000-develop
+  type: markdown
+  nav_title: Sg 4000 Develop
+  content_footers: 
+
+- !omap
+  source: sg-4100-channels
+  type: markdown
+  nav_title: Sg 4100 Channels
+  content_footers: 
+
+- !omap
+  source: sg-4200-walrus
+  type: markdown
+  nav_title: Sg 4200 Walrus
+  content_footers: 
+
+- !omap
+  source: sg-5000-api
+  type: markdown
+  nav_title: Sg 5000 API
+  content_footers: 
+
+- !omap
+  source: sg-5100-sync-function
+  type: markdown
+  nav_title: Sg 5100 Sync Function
+  content_footers: 
+
+- !omap
+  source: sg-5200-sync-rest
+  type: markdown
+  nav_title: Sg 5200 Sync Rest
+  content_footers: 
+
+- !omap
+  source: sg-5300-admin-rest
+  type: markdown
+  nav_title: Sg 5300 Admin Rest
+  content_footers: 
+
+- !omap
+  source: sg-6000-deploy
+  type: markdown
+  nav_title: Sg 6000 Deploy
+  content_footers: 
+
+- !omap
+  source: sg-7000-trouble
+  type: markdown
+  nav_title: Sg 7000 Trouble
+  content_footers: 
+
+- !omap
+  source: sg-8000-contribute
+  type: markdown
+  nav_title: Sg 8000 Contribute
+  content_footers: 
+
+- !omap
+  source: sg-9000-release-notes
+  type: markdown
+  nav_title: Sg 9000 Release Notes
+  content_footers: 

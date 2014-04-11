@@ -1,0 +1,16 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: rel_vs_doc_model.png
+  img_alt: Rel Vs Doc Model
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: table_vs_doc_N1QL.png
+  img_alt: Table Vs Doc N1ql
+  img_caption: 
+  img_tooltip_text: 

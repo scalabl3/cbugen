@@ -1,0 +1,29 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cb-rn-2_0
+  type: markdown
+  nav_title: Cb Rn 2_0
+  content_footers: 
+
+- !omap
+  source: cb-rn-2_1
+  type: markdown
+  nav_title: Cb Rn 2_1
+  content_footers: 
+
+- !omap
+  source: cb-rn-2_2
+  type: markdown
+  nav_title: Cb Rn 2_2
+  content_footers: 
+
+- !omap
+  source: cb-rn-2_5
+  type: markdown
+  nav_title: Cb Rn 2_5
+  content_footers: 

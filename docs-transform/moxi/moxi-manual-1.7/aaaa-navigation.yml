@@ -1,0 +1,77 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: appendix-licenses
+  type: markdown
+  nav_title: Appendix Licenses
+  content_footers: 
+
+- !omap
+  source: appendix-release-notes
+  type: markdown
+  nav_title: Appendix Release Notes
+  content_footers: 
+
+- !omap
+  source: building-moxi-from-source
+  type: markdown
+  nav_title: Building Moxi From Source
+  content_footers: 
+
+- !omap
+  source: following-a-request-through-moxi
+  type: markdown
+  nav_title: Following a Request Through Moxi
+  content_footers: 
+
+- !omap
+  source: introduction
+  type: markdown
+  nav_title: Introduction
+  content_footers: 
+
+- !omap
+  source: moxi-design-internals
+  type: markdown
+  nav_title: Moxi Design Internals
+  content_footers: 
+
+- !omap
+  source: moxi-error-responses
+  type: markdown
+  nav_title: Moxi Error Responses
+  content_footers: 
+
+- !omap
+  source: moxi-performance-tuning-standalone-moxi
+  type: markdown
+  nav_title: Moxi Performance Tuning Standalone Moxi
+  content_footers: 
+
+- !omap
+  source: moxi-server-1.7
+  type: markdown
+  nav_title: Moxi Server 1.7
+  content_footers: 
+
+- !omap
+  source: moxi-statistics
+  type: markdown
+  nav_title: Moxi Statistics
+  content_footers: 
+
+- !omap
+  source: moxi-with-memcached
+  type: markdown
+  nav_title: Moxi with Memcached
+  content_footers: 
+
+- !omap
+  source: standalone-moxi-component
+  type: markdown
+  nav_title: Standalone Moxi Component
+  content_footers: 

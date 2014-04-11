@@ -1,0 +1,11 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-pg-1000-intro
+  type: markdown
+  nav_title: CBL Pg 1000 Intro
+  content_footers: 

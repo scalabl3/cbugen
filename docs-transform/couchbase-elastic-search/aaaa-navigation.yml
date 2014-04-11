@@ -1,0 +1,47 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: appendix-licenses
+  type: markdown
+  nav_title: Appendix Licenses
+  content_footers: 
+
+- !omap
+  source: appendix-release-notes
+  type: markdown
+  nav_title: Appendix Release Notes
+  content_footers: 
+
+- !omap
+  source: couchbase-plug-in-for-elasticsearch
+  type: markdown
+  nav_title: Couchbase Plug in for Elasticsearch
+  content_footers: 
+
+- !omap
+  source: couchbase-plug-in-for-elasticsearch2
+  type: markdown
+  nav_title: Couchbase Plug in for Elasticsearch2
+  content_footers: 
+
+- !omap
+  source: indexing-and-querying-data
+  type: markdown
+  nav_title: Indexing and Querying Data
+  content_footers: 
+
+- !omap
+  source: installation-and-configuration
+  type: markdown
+  nav_title: Installation and Configuration
+  content_footers: 
+
+- !omap
+  source: monitoring-and-troubleshooting
+  type: markdown
+  nav_title: Monitoring and Troubleshooting
+  content_footers: 

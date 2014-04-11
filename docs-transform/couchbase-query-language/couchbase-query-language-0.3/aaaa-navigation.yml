@@ -1,0 +1,107 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: concepts
+  type: markdown
+  nav_title: Concepts
+  content_footers: 
+
+- !omap
+  source: conventions
+  type: markdown
+  nav_title: Conventions
+  content_footers: 
+
+- !omap
+  source: create-index
+  type: markdown
+  nav_title: Create Index
+  content_footers: 
+
+- !omap
+  source: create-primary-index
+  type: markdown
+  nav_title: Create Primary Index
+  content_footers: 
+
+- !omap
+  source: drop-index
+  type: markdown
+  nav_title: Drop Index
+  content_footers: 
+
+- !omap
+  source: explain
+  type: markdown
+  nav_title: Explain
+  content_footers: 
+
+- !omap
+  source: expressions
+  type: markdown
+  nav_title: Expressions
+  content_footers: 
+
+- !omap
+  source: functions
+  type: markdown
+  nav_title: Functions
+  content_footers: 
+
+- !omap
+  source: introduction
+  type: markdown
+  nav_title: Introduction
+  content_footers: 
+
+- !omap
+  source: language-reference
+  type: markdown
+  nav_title: Language Reference
+  content_footers: 
+
+- !omap
+  source: operators
+  type: markdown
+  nav_title: Operators
+  content_footers: 
+
+- !omap
+  source: questions
+  type: markdown
+  nav_title: Questions
+  content_footers: 
+
+- !omap
+  source: release-notes
+  type: markdown
+  nav_title: Release Notes
+  content_footers: 
+
+- !omap
+  source: reserved-words
+  type: markdown
+  nav_title: Reserved Words
+  content_footers: 
+
+- !omap
+  source: select
+  type: markdown
+  nav_title: Select
+  content_footers: 
+
+- !omap
+  source: tutorial
+  type: markdown
+  nav_title: Tutorial
+  content_footers: 
+
+- !omap
+  source: older-versions
+  type: folder
+  nav_title: Older Versions
+  content_footers: 

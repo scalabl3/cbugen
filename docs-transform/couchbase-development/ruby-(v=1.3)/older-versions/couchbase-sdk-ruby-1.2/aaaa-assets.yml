@@ -1,0 +1,9 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: couchbase-beer.rb-home.png
+  img_alt: Couchbase Beer.rb Home
+  img_caption: 
+  img_tooltip_text: 

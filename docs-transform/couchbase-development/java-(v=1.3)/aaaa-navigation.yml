@@ -1,0 +1,67 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/advanced-usage"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/advanced Usage"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/appendix-release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/appendix Release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/couchbase-client-library-java-1.3"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/couchbase Client Library Java 1.3"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/introduction"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/introduction"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/tutorial"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/tutorial"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/using-the-apis"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/using the API"
+  content_footers: 
+
+- !omap
+  source: older-versions
+  type: folder
+  nav_title: Older Versions
+  content_footers: 

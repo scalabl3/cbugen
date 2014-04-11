@@ -1,0 +1,41 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: appendix-licenses
+  type: markdown
+  nav_title: Appendix Licenses
+  content_footers: 
+
+- !omap
+  source: couchsqoop-a-couchbase-plugin-for-sqoop
+  type: markdown
+  nav_title: Couchsqoop a Couchbase Plugin for Sqoop
+  content_footers: 
+
+- !omap
+  source: installation
+  type: markdown
+  nav_title: Installation
+  content_footers: 
+
+- !omap
+  source: internals
+  type: markdown
+  nav_title: Internals
+  content_footers: 
+
+- !omap
+  source: using-sqoop
+  type: markdown
+  nav_title: Using Sqoop
+  content_footers: 
+
+- !omap
+  source: older-versions
+  type: folder
+  nav_title: Older Versions
+  content_footers: 

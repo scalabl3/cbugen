@@ -1,0 +1,23 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: moxi-guide
+  type: folder
+  nav_title: Moxi Guide
+  content_footers: 
+
+- !omap
+  source: moxi-manual-1.7
+  type: folder
+  nav_title: Moxi Manual 1.7
+  content_footers: 
+
+- !omap
+  source: moxi-manual-1.8
+  type: folder
+  nav_title: Moxi Manual 1.8
+  content_footers: 

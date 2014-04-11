@@ -1,0 +1,9 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: debug-screen.png
+  img_alt: Debug Screen
+  img_caption: 
+  img_tooltip_text: 

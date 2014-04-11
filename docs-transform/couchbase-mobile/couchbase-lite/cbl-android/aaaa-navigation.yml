@@ -1,0 +1,17 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-android-1.0b1
+  type: folder
+  nav_title: CBL Android 1.0b1
+  content_footers: 
+
+- !omap
+  source: cbl-android-1.0b2
+  type: folder
+  nav_title: CBL Android 1.0b2
+  content_footers: 

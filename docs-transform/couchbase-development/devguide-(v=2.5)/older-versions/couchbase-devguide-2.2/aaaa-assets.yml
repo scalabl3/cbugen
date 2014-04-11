@@ -1,0 +1,275 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: append_prepend.png
+  img_alt: Append Prepend
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: append_prepend2.png
+  img_alt: Append Prepend2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: cas1.png
+  img_alt: CAS1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: cas2.png
+  img_alt: CAS2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: get_alt.png
+  img_alt: Get Alt
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: get_and_touch.png
+  img_alt: Get and Touch
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: get_w_cas.png
+  img_alt: Get W CAS
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: getl.png
+  img_alt: Getl
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: incr_decr.png
+  img_alt: Incr Decr
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: lease_out_pattern1.png
+  img_alt: Lease Out Pattern1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: lease_out_pattern_w_tickets.png
+  img_alt: Lease Out Pattern W Tickets
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: modeling_retrieve_belongsto.png
+  img_alt: Modeling Retrieve Belongsto
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: modeling_retrieve_hasmany.png
+  img_alt: Modeling Retrieve Hasmany
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: multi_get2.0.png
+  img_alt: Multi Get2.0
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: normalizing_data.png
+  img_alt: Normalizing Data
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: observe1.png
+  img_alt: Observe1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: observe2.png
+  img_alt: Observe2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: reddit.png
+  img_alt: Reddit
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: reddit_snippet.png
+  img_alt: Reddit Snippet
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: relating_docs.png
+  img_alt: Relating Docs
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: relational_vs_doc1.png
+  img_alt: Relational Vs Doc1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: replace1.png
+  img_alt: Replace1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: replace2.png
+  img_alt: Replace2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: rereduce1.png
+  img_alt: Rereduce1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: rereduce2.png
+  img_alt: Rereduce2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: rereduceCT.png
+  img_alt: Rereducect
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: sdk_add_example.png
+  img_alt: SDK Add Example
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: set_seeding.png
+  img_alt: Set Seeding
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: touch1.png
+  img_alt: Touch1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: touch2.png
+  img_alt: Touch2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: two-phase-rollback.png
+  img_alt: Two Phase Rollback
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: two_phase_commit.png
+  img_alt: Two Phase Commit
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: user_lookup1.png
+  img_alt: User Lookup1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: user_lookup2.png
+  img_alt: User Lookup2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: user_lookup3.png
+  img_alt: User Lookup3
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: user_lookup4.png
+  img_alt: User Lookup4
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view_elements.png
+  img_alt: View Elements
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view_result_set.png
+  img_alt: View Result Set
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: CB_basic_arch.jpg
+  img_alt: Cb Basic Arch
+  img_caption: 
+  img_tooltip_text: 

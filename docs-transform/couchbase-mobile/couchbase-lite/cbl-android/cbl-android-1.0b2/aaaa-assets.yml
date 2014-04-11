@@ -1,0 +1,93 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: build-gradle-sample.png
+  img_alt: Build Gradle Sample
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: build-gradle-sized.png
+  img_alt: Build Gradle Sized
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: build-gradle.png
+  img_alt: Build Gradle
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: debug-screen.png
+  img_alt: Debug Screen
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: hello-logcat-eclipse.png
+  img_alt: Hello Logcat Eclipse
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: hello-logcat.png
+  img_alt: Hello Logcat
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: hello-world-emulator-eclipse.png
+  img_alt: Hello World Emulator Eclipse
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: hello-world-emulator.png
+  img_alt: Hello World Emulator
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: new-project-eclipse.png
+  img_alt: New Project Eclipse
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: new-project.png
+  img_alt: New Project
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: project-files.png
+  img_alt: Project Files
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: sync-gradle.png
+  img_alt: Sync Gradle
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: td-collator-files.png
+  img_alt: Td Collator Files
+  img_caption: 
+  img_tooltip_text: 

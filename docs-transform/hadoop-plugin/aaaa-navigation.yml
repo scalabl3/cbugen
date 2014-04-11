@@ -1,0 +1,11 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: hadoop-plugin-1.1
+  type: folder
+  nav_title: Hadoop Plugin 1.1
+  content_footers: 

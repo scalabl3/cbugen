@@ -1,0 +1,44 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: active-scheme.png
+  img_alt: Active Scheme
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: build-phases.png
+  img_alt: Build Phases
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: build-settings.png
+  img_alt: Build Settings
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: cbl-framework.png
+  img_alt: CBL Framework
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: console-output.png
+  img_alt: Console Output
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: logging.png
+  img_alt: Logging
+  img_caption: 
+  img_tooltip_text: 

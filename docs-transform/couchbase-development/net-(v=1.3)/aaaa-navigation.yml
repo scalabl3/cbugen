@@ -1,0 +1,130 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/cluster-management-with-the-net-client-library"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/cluster Management with the .Net Client Library"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/configuring-logging"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/configuring Logging"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/configuring-the-net-client-library"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/configuring the .Net Client Library"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/couchbase-and-asp-net-mvc"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/couchbase and ASP.NET MVC"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/json-extension-methods"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/JSON Extension Methods"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/net-connection-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/.Net Connection Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/net-method-summary"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/.Net Method Summary"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/net-troubleshooting"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/.Net Troubleshooting"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/packages-for-the.net-client-library"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/packages for the..Net Client Library"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/retrieve-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/retrieve Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/store-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/store Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/update-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/update Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/view-query-interface"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/view Query Interface"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/net-(v=1.3)/working-with-operation-results"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/.Net
+    (v-1.3)/working with Operation Results"
+  content_footers: 
+
+- !omap
+  source: older-versions
+  type: folder
+  nav_title: Older Versions
+  content_footers: 

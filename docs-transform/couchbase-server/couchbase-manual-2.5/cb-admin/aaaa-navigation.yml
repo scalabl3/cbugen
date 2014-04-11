@@ -1,0 +1,89 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: admin-basics
+  type: markdown
+  nav_title: Admin Basics
+  content_footers: 
+
+- !omap
+  source: admin-tasks
+  type: markdown
+  nav_title: Admin Tasks
+  content_footers: 
+
+- !omap
+  source: apx-limits
+  type: markdown
+  nav_title: Apx Limits
+  content_footers: 
+
+- !omap
+  source: apx-sample-buckets
+  type: markdown
+  nav_title: Apx Sample Buckets
+  content_footers: 
+
+- !omap
+  source: best-practices
+  type: markdown
+  nav_title: Best Practices
+  content_footers: 
+
+- !omap
+  source: cb-concepts
+  type: markdown
+  nav_title: Cb Concepts
+  content_footers: 
+
+- !omap
+  source: FAQs
+  type: markdown
+  nav_title: FAQ
+  content_footers: 
+
+- !omap
+  source: monitoring
+  type: markdown
+  nav_title: Monitoring
+  content_footers: 
+
+- !omap
+  source: rack-aware
+  type: markdown
+  nav_title: Rack Aware
+  content_footers: 
+
+- !omap
+  source: trouble-overview
+  type: markdown
+  nav_title: Trouble Overview
+  content_footers: 
+
+- !omap
+  source: trouble-views
+  type: markdown
+  nav_title: Trouble Views
+  content_footers: 
+
+- !omap
+  source: views-and-indexes
+  type: markdown
+  nav_title: Views and Indexes
+  content_footers: 
+
+- !omap
+  source: web-console
+  type: markdown
+  nav_title: Web Console
+  content_footers: 
+
+- !omap
+  source: xdcr
+  type: markdown
+  nav_title: XDCR
+  content_footers: 

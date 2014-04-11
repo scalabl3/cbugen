@@ -1,0 +1,47 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-api-1000-intro
+  type: markdown
+  nav_title: CBL API 1000 Intro
+  content_footers: 
+
+- !omap
+  source: cbl-api-2000-database
+  type: markdown
+  nav_title: CBL API 2000 Database
+  content_footers: 
+
+- !omap
+  source: cbl-api-3000-document
+  type: markdown
+  nav_title: CBL API 3000 Document
+  content_footers: 
+
+- !omap
+  source: cbl-api-4000-local
+  type: markdown
+  nav_title: CBL API 4000 Local
+  content_footers: 
+
+- !omap
+  source: cbl-api-5000-design
+  type: markdown
+  nav_title: CBL API 5000 Design
+  content_footers: 
+
+- !omap
+  source: cbl-api-6000-server
+  type: markdown
+  nav_title: CBL API 6000 Server
+  content_footers: 
+
+- !omap
+  source: cbl-api-7000-auth
+  type: markdown
+  nav_title: CBL API 7000 Auth
+  content_footers: 

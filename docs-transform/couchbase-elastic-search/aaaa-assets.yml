@@ -1,0 +1,79 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: create_cluster_ref.png
+  img_alt: Create Cluster Ref
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_components.png
+  img_alt: Elastic Components
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_get_doc.png
+  img_alt: Elastic Get Doc
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_head.png
+  img_alt: Elastic Head
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_model_int.png
+  img_alt: Elastic Model Int
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_model_str.png
+  img_alt: Elastic Model Str
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_montor_xdcr.png
+  img_alt: Elastic Montor XDCR
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_replicate.png
+  img_alt: Elastic Replicate
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_replicate_2.png
+  img_alt: Elastic Replicate 2
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: elastic_xdcr_ref_fail.png
+  img_alt: Elastic XDCR Ref Fail
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view_replication.png
+  img_alt: View Replication
+  img_caption: 
+  img_tooltip_text: 

@@ -1,0 +1,83 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-android-adding-cbl
+  type: markdown
+  nav_title: CBL Android Adding CBL
+  content_footers: 
+
+- !omap
+  source: cbl-android-async
+  type: markdown
+  nav_title: CBL Android Async
+  content_footers: 
+
+- !omap
+  source: cbl-android-databases
+  type: markdown
+  nav_title: CBL Android Databases
+  content_footers: 
+
+- !omap
+  source: cbl-android-develop
+  type: markdown
+  nav_title: CBL Android Develop
+  content_footers: 
+
+- !omap
+  source: cbl-android-documents
+  type: markdown
+  nav_title: CBL Android Documents
+  content_footers: 
+
+- !omap
+  source: cbl-android-intro
+  type: markdown
+  nav_title: CBL Android Intro
+  content_footers: 
+
+- !omap
+  source: cbl-android-release-notes
+  type: markdown
+  nav_title: CBL Android Release Notes
+  content_footers: 
+
+- !omap
+  source: cbl-android-replication
+  type: markdown
+  nav_title: CBL Android Replication
+  content_footers: 
+
+- !omap
+  source: cbl-android-trouble
+  type: markdown
+  nav_title: CBL Android Trouble
+  content_footers: 
+
+- !omap
+  source: cbl-android-tutorial-eclipse
+  type: markdown
+  nav_title: CBL Android Tutorial Eclipse
+  content_footers: 
+
+- !omap
+  source: cbl-android-tutorial-studio
+  type: markdown
+  nav_title: CBL Android Tutorial Studio
+  content_footers: 
+
+- !omap
+  source: cbl-android-tutorial
+  type: markdown
+  nav_title: CBL Android Tutorial
+  content_footers: 
+
+- !omap
+  source: cbl-android-views
+  type: markdown
+  nav_title: CBL Android Views
+  content_footers: 

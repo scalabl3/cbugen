@@ -1,0 +1,81 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/accessing-data-with-couchbase-sdks"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/accessing Data with
+    Couchbase SDKs"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/advanced-topics-in-development"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/advanced Topics in
+    Development"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/couchbase-developer-s-guide-2.2"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/couchbase Developer's
+    Guide 2.2"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/creating-your-first-application"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/creating Your First
+    Application"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/developing-a-client-library"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/developing a Client
+    Library"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/finding-data-with-views"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/finding Data with
+    Views"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/introduction-to-couchbase"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/introduction to Couchbase"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/modeling-documents"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/modeling Documents"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-2.2/storing-data"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 2.2/storing Data"
+  content_footers: 

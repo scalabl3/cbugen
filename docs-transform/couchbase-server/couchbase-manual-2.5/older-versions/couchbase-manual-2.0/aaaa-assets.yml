@@ -1,0 +1,618 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: admin-tasks-pending-rebalance.png
+  img_alt: Admin Tasks Pending Rebalance
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-add-button.png
+  img_alt: Admin Tasks Rebalance Add Button
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-add-console.png
+  img_alt: Admin Tasks Rebalance Add Console
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-add-setup.png
+  img_alt: Admin Tasks Rebalance Add Setup
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-monitoring-console.png
+  img_alt: Admin Tasks Rebalance Monitoring Console
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-node-added.png
+  img_alt: Admin Tasks Rebalance Node Added
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: admin-tasks-rebalance-starting-console.png
+  img_alt: Admin Tasks Rebalance Starting Console
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: configure_server1.png
+  img_alt: Configure Server1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: custom-reduce.png
+  img_alt: Custom Reduce
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: custom-rereduce.png
+  img_alt: Custom Rereduce
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: intra_cluster_repl.png
+  img_alt: Intra Cluster Repl
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: macosx-menubar.png
+  img_alt: Macosx Menubar
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: online-upgrade-addnode.png
+  img_alt: Online Upgrade Addnode
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: online-upgrade-noderemoved.png
+  img_alt: Online Upgrade Noderemoved
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: online-upgrade-rebalance.png
+  img_alt: Online Upgrade Rebalance
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: online-upgrade-removenode.png
+  img_alt: Online Upgrade Removenode
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: outbound_xdcr.png
+  img_alt: Outbound XDCR
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: ram-quotas.png
+  img_alt: Ram Quotas
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: replica_backoff.png
+  img_alt: Replica Backoff
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: upgrade_addserver.png
+  img_alt: Upgrade Addserver
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: upgrade_disk_write_zero.png
+  img_alt: Upgrade Disk Write Zero
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: vbuckets-after.png
+  img_alt: Vbuckets After
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: vbuckets.png
+  img_alt: Vbuckets
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view-building.png
+  img_alt: View Building
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view-types-datastore.png
+  img_alt: View Types Datastore
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: view-types-workflow.png
+  img_alt: View Types Workflow
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-basic-overview-missing.png
+  img_alt: Views Basic Overview Missing
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-basic-overview.png
+  img_alt: Views Basic Overview
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-detail.png
+  img_alt: Views Detail
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-editing.png
+  img_alt: Views Editing
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-filters.png
+  img_alt: Views Filters
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-grouping.png
+  img_alt: Views Grouping
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-overview.png
+  img_alt: Views Overview
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-query-flow.png
+  img_alt: Views Query Flow
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-stale-sequence-stale.png
+  img_alt: Views Stale Sequence Stale
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-stale-sequence-updateafter.png
+  img_alt: Views Stale Sequence Updateafter
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views-stale-sequence-updatebefore.png
+  img_alt: Views Stale Sequence Updatebefore
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: views_replica.png
+  img_alt: Views Replica
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: warning-notification.png
+  img_alt: Warning Notification
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-bucket-info.png
+  img_alt: Web Console Bucket Info
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-cluster-overview-buckets.png
+  img_alt: Web Console Cluster Overview Buckets
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-cluster-overview-cluster.png
+  img_alt: Web Console Cluster Overview Cluster
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-cluster-overview-servers.png
+  img_alt: Web Console Cluster Overview Servers
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-cluster-overview.png
+  img_alt: Web Console Cluster Overview
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-create-bucket.png
+  img_alt: Web Console Create Bucket
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-data-buckets-overview.png
+  img_alt: Web Console Data Buckets Overview
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-document-create.png
+  img_alt: Web Console Document Create
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-document-edit.png
+  img_alt: Web Console Document Edit
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-document-list.png
+  img_alt: Web Console Document List
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-individual.png
+  img_alt: Web Console Server Individual
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-log.png
+  img_alt: Web Console Server Log
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-node.png
+  img_alt: Web Console Server Node
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-settings-alerts.png
+  img_alt: Web Console Server Settings Alerts
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-settings-autocompact.png
+  img_alt: Web Console Server Settings Autocompact
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-settings-autofailover.png
+  img_alt: Web Console Server Settings Autofailover
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-settings-sample.png
+  img_alt: Web Console Server Settings Sample
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-settings-updatenotifications.png
+  img_alt: Web Console Server Settings Updatenotifications
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-specific.png
+  img_alt: Web Console Server Specific
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-states-down.png
+  img_alt: Web Console Server States Down
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-states-pend.png
+  img_alt: Web Console Server States Pend
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-diskqueues.png
+  img_alt: Web Console Server Stats Diskqueues
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-memcached.png
+  img_alt: Web Console Server Stats Memcached
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-summary.png
+  img_alt: Web Console Server Stats Summary
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-tapqueues.png
+  img_alt: Web Console Server Stats Tapqueues
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-vbucket.png
+  img_alt: Web Console Server Stats Vbucket
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-stats-views.png
+  img_alt: Web Console Server Stats Views
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-server-summary.png
+  img_alt: Web Console Server Summary
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-startup-3.png
+  img_alt: Web Console Startup 3
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-startup-4.png
+  img_alt: Web Console Startup 4
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: web-console-startup-7.png
+  img_alt: Web Console Startup 7
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-cluster-monitor.png
+  img_alt: XDCR Cluster Monitor
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-cluster-reference.png
+  img_alt: XDCR Cluster Reference
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-cluster-setup.png
+  img_alt: XDCR Cluster Setup
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-errors-missing-vbuckets.png
+  img_alt: XDCR Errors Missing Vbuckets
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-persistence.png
+  img_alt: XDCR Persistence
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-vpn-bgp.png
+  img_alt: XDCR Vpn Bgp
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr-vpn-static.png
+  img_alt: XDCR Vpn Static
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_1.png
+  img_alt: XDCR 1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_advanced.png
+  img_alt: XDCR Advanced
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_conflict_res.png
+  img_alt: XDCR Conflict Res
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_incoming.png
+  img_alt: XDCR Incoming
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_ongoing.png
+  img_alt: XDCR Ongoing
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_repl_chain.png
+  img_alt: XDCR Repl Chain
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: xdcr_selective.png
+  img_alt: XDCR Selective
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: couchbase-060711-1157-32_img_279.jpg
+  img_alt: Couchbase 060711 1157 32 Img 279
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: couchbase-060711-1157-32_img_280.jpg
+  img_alt: Couchbase 060711 1157 32 Img 280
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: couchbase-060711-1157-32_img_281.jpg
+  img_alt: Couchbase 060711 1157 32 Img 281
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: couchbase-060711-1157-32_img_300.jpg
+  img_alt: Couchbase 060711 1157 32 Img 300
+  img_caption: 
+  img_tooltip_text: 

@@ -1,0 +1,35 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-concepts-1000-intro
+  type: markdown
+  nav_title: CBL Concepts 1000 Intro
+  content_footers: 
+
+- !omap
+  source: cbl-concepts-2000-architecture
+  type: markdown
+  nav_title: CBL Concepts 2000 Architecture
+  content_footers: 
+
+- !omap
+  source: cbl-concepts-3000-concepts
+  type: markdown
+  nav_title: CBL Concepts 3000 Concepts
+  content_footers: 
+
+- !omap
+  source: cbl-concepts-4000-where
+  type: markdown
+  nav_title: CBL Concepts 4000 Where
+  content_footers: 
+
+- !omap
+  source: cbl-concepts-5000-faq
+  type: markdown
+  nav_title: CBL Concepts 5000 FAQ
+  content_footers: 

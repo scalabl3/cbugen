@@ -1,0 +1,72 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/advanced-topics-in-development"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/advanced Topics in
+    Development"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/couchbase-developer-s-guide-1.8"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/couchbase Developer's
+    Guide 1.8"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/creating-your-first-application"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/creating Your First
+    Application"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/developing-a-client-library"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/developing a Client
+    Library"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/introduction-to-couchbase"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/introduction to Couchbase"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/storing-data"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/storing Data"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/structuring-data"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/structuring Data"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/devguide-(v=2.5)/older-versions/couchbase-devguide-1.8/using-couchbase-sdks"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/Developer's
+    Guide (v-2.5)/older Versions/couchbase Developer's Guide 1.8/using Couchbase SDKs"
+  content_footers: 

@@ -1,0 +1,41 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-docs
+  type: markdown
+  nav_title: CBL Docs
+  content_footers: 
+
+- !omap
+  source: cbl-android
+  type: folder
+  nav_title: CBL Android
+  content_footers: 
+
+- !omap
+  source: cbl-api
+  type: folder
+  nav_title: CBL API
+  content_footers: 
+
+- !omap
+  source: cbl-concepts
+  type: folder
+  nav_title: CBL Concepts
+  content_footers: 
+
+- !omap
+  source: cbl-ios
+  type: folder
+  nav_title: CBL iOS
+  content_footers: 
+
+- !omap
+  source: cbl-phonegap
+  type: folder
+  nav_title: CBL Phonegap
+  content_footers: 

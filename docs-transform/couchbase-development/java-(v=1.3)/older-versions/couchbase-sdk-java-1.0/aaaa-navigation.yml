@@ -1,0 +1,96 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/appendix-release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/appendix Release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/connection-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/connection Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/couchbase-client-library-java-1.0"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/couchbase Client Library Java 1.0"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/java-method-summary"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/java Method Summary"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/java-troubleshooting"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/java Troubleshooting"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/retrieve-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/retrieve Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/statistics-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/statistics Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/store-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/store Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/tutorial"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/tutorial"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/update-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/update Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/java-(v=1.3)/older-versions/couchbase-sdk-java-1.0/using-the-apis"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/java
+    (v-1.3)/older Versions/couchbase Java SDK 1.0/using the API"
+  content_footers: 

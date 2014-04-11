@@ -1,0 +1,96 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/appendix-release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/appendix Release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/couchbase-and-rails-tutorial"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/couchbase and Rails Tutorial"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/couchbase-client-library-ruby-1.2"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/couchbase Client Library Ruby 1.2"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/finding-data-with-views"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/finding Data with Views"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-connection-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Connection Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-method-summary"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Method Summary"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-retrieve-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Retrieve Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-statistics-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Statistics Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-storage-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Storage Operations"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-troubleshooting"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Troubleshooting"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/ruby-(v=1.3)/older-versions/couchbase-sdk-ruby-1.2/ruby-update-operations"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/ruby
+    (v-1.3)/older Versions/couchbase Ruby SDK 1.2/ruby Update Operations"
+  content_footers: 

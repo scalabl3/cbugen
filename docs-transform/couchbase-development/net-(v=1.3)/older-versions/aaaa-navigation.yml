@@ -1,0 +1,23 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: couchbase-sdk-net-1.0
+  type: folder
+  nav_title: Couchbase .Net SDK 1.0
+  content_footers: 
+
+- !omap
+  source: couchbase-sdk-net-1.1
+  type: folder
+  nav_title: Couchbase .Net SDK 1.1
+  content_footers: 
+
+- !omap
+  source: couchbase-sdk-net-1.2
+  type: folder
+  nav_title: Couchbase .Net SDK 1.2
+  content_footers: 

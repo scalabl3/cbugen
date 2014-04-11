@@ -1,0 +1,53 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cbl-android-1000-intro
+  type: markdown
+  nav_title: CBL Android 1000 Intro
+  content_footers: 
+
+- !omap
+  source: cbl-android-2000-getstarted
+  type: markdown
+  nav_title: CBL Android 2000 Getstarted
+  content_footers: 
+
+- !omap
+  source: cbl-android-2100-adding-cbl
+  type: markdown
+  nav_title: CBL Android 2100 Adding CBL
+  content_footers: 
+
+- !omap
+  source: cbl-android-3000-develop
+  type: markdown
+  nav_title: CBL Android 3000 Develop
+  content_footers: 
+
+- !omap
+  source: cbl-android-3400-views
+  type: markdown
+  nav_title: CBL Android 3400 Views
+  content_footers: 
+
+- !omap
+  source: cbl-android-3500-replication
+  type: markdown
+  nav_title: CBL Android 3500 Replication
+  content_footers: 
+
+- !omap
+  source: cbl-android-6000-trouble
+  type: markdown
+  nav_title: CBL Android 6000 Trouble
+  content_footers: 
+
+- !omap
+  source: cbl-android-7000-release-notes
+  type: markdown
+  nav_title: CBL Android 7000 Release Notes
+  content_footers: 

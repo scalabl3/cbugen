@@ -1,0 +1,48 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/appendix-release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/appendix Release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/c-function-summary"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/c Function Summary"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/couchbase-client-library-c-libcouchbase-1.0"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/couchbase Client Library C libcouchbase
+    1.0"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-1.0/tutorial"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 1.0/tutorial"
+  content_footers: 

@@ -1,0 +1,156 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: fig01-new-project.png
+  img_alt: Fig01 New Project
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig02-mvc-template.png
+  img_alt: Fig02 MVC Template
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig03-nuget-cb.png
+  img_alt: Fig03 Nuget Cb
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig04-nuget-mv.png
+  img_alt: Fig04 Nuget Mv
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig05-all-view.png
+  img_alt: Fig05 All View
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig06-nuget-i.png
+  img_alt: Fig06 Nuget I
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig07-controller-template.png
+  img_alt: Fig07 Controller Template
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig08-list-breweries.png
+  img_alt: Fig08 List Breweries
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig09-list-page.png
+  img_alt: Fig09 List Page
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig10-edit-template.png
+  img_alt: Fig10 Edit Template
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig11-edit-brewery.png
+  img_alt: Fig11 Edit Brewery
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig12-details-template.png
+  img_alt: Fig12 Details Template
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig13-details-brewery.png
+  img_alt: Fig13 Details Brewery
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig14-paging.png
+  img_alt: Fig14 Paging
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig15-countries-controller.png
+  img_alt: Fig15 Countries Controller
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig16-countries-index.png
+  img_alt: Fig16 Countries Index
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig17-countries.png
+  img_alt: Fig17 Countries
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig18-provinces.png
+  img_alt: Fig18 Provinces
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig19-cities.png
+  img_alt: Fig19 Cities
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig20-codes.png
+  img_alt: Fig20 Codes
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig21-breweries-codes.png
+  img_alt: Fig21 Breweries Codes
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: fig22-map.png
+  img_alt: Fig22 Map
+  img_caption: 
+  img_tooltip_text: 

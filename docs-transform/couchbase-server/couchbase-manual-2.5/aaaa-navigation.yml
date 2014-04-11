@@ -1,0 +1,53 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: cb-docs
+  type: markdown
+  nav_title: Cb Docs
+  content_footers: 
+
+- !omap
+  source: licenses
+  type: markdown
+  nav_title: Licenses
+  content_footers: 
+
+- !omap
+  source: cb-admin
+  type: folder
+  nav_title: Cb Admin
+  content_footers: 
+
+- !omap
+  source: cb-cli
+  type: folder
+  nav_title: Cb Cli
+  content_footers: 
+
+- !omap
+  source: cb-install
+  type: folder
+  nav_title: Cb Install
+  content_footers: 
+
+- !omap
+  source: cb-release-notes
+  type: folder
+  nav_title: Cb Release Notes
+  content_footers: 
+
+- !omap
+  source: cb-rest-api
+  type: folder
+  nav_title: Cb Rest API
+  content_footers: 
+
+- !omap
+  source: older-versions
+  type: folder
+  nav_title: Older Versions
+  content_footers: 

@@ -1,0 +1,16 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: architecture.png
+  img_alt: Architecture
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: mobile-solution.png
+  img_alt: Mobile Solution
+  img_caption: 
+  img_tooltip_text: 

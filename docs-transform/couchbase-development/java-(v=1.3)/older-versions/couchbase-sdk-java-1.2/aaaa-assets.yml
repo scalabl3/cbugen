@@ -1,0 +1,16 @@
+--- !omap
+asset_items:
+
+- !omap
+  type: image
+  file: maven_setup1.png
+  img_alt: Maven Setup1
+  img_caption: 
+  img_tooltip_text: 
+
+- !omap
+  type: image
+  file: maven_setup2.png
+  img_alt: Maven Setup2
+  img_caption: 
+  img_tooltip_text: 

@@ -1,0 +1,61 @@
+--- !omap
+common_metadata: !omap
+  tags:
+  - couchbase
+nav_items:
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/api-introduction"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/API Introduction"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/appendix-licenses"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/appendix Licenses"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/appendix-release-notes"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/appendix Release Notes"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/common-patterns"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/common Patterns"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/getting-started"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/getting Started"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/integration-with-libcouchbase"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/integration with libcouchbase"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/tutorial"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/tutorial"
+  content_footers: 
+
+- !omap
+  source: "/Users/jasdeep/Bits/Couchbase/cbu/cbugen/docs-transform/couchbase-development/c-(v=2.3)/older-versions/couchbase-sdk-c-2.2/view-query-interface"
+  type: markdown
+  nav_title: "/users/jasdeep/bits/couchbase/cbu/cbugen/docs Transform/couchbase Development/c
+    (v-2.3)/older Versions/couchbase C SDK 2.2/view Query Interface"
+  content_footers: 

@@ -11,8 +11,12 @@ require 'httparty'
 require 'pp'
 require 'chronic'
 require 'base64'
+require 'dotenv'
 
-
+Dotenv.load 
+CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+puts ENV['cbu_couchbase_server_pass']
+exit
 Dir.chdir(".")
 GROOT = Dir.pwd
 
@@ -37,7 +41,7 @@ class ManageCluster
 
 	def xdcr_remote_clusters(options={})		
     options.merge!({:basic_auth => @auth})
-    @clusters = self.class.get('http://localhost:8091/pools/default/remoteClusters', options)
+    @clusters = self.class.get("http://#{CB_SERVERS[0]}:8091/pools/default/remoteClusters", options)
 
 		@clusters.each do |c|
 			if c[:name] == "ES"
@@ -66,12 +70,12 @@ class ManageCluster
 		}
 		options.merge!(opts)
 		options.merge!({:basic_auth => @auth})
-		self.class.post('http://localhost:8091/controller/createReplication', options)
+		self.class.post("http://#{CB_SERVERS[0]}:8091/controller/createReplication", options)
 	end
 	
 	def current_replications(options={})
 		options.merge!({:basic_auth => @auth})
-    self.class.get('http://localhost:8091/settings/replications/', options)
+    self.class.get("http://#{CB_SERVERS[0]}:8091/settings/replications/", options)
 	end
 	
 	def remove_xdcr_replication

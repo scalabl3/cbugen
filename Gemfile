@@ -5,7 +5,6 @@ gem 'map'
 
 gem 'json'
 gem 'multi_json'
-gem 'yaml'
 
 gem 'couchbase'
 gem 'elasticsearch'

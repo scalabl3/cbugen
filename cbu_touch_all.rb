@@ -2,13 +2,17 @@ require 'map'
 require 'couchbase'
 
 Dotenv.load ".env"
-CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+CB_IP=ENV['cbu_couchbase_servers'].split(",")
+CB_SERVERS=[]
+CB_IP.each do |ip|
+	CB_SERVERS << "http://#{ip}"
+end
 
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
-require '../university.couchbase.com/app/models/docs_nav_tree.rb'
-require '../university.couchbase.com/app/models/render_nav_tree.rb'
+require "#{ENV['cbu_rails_root']}/app/models/docs_nav_tree.rb"
+require "#{ENV['cbu_rails_root']}/app/models/render_nav_tree.rb"
 
 DocsNavTree.generate
 RenderNavTree.generate

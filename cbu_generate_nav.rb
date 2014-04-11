@@ -5,8 +5,8 @@ require 'map'
 require 'couchbase'
 require 'yaml'
 require "awesome_print"
-
 require 'dotenv'
+
 Dotenv.load ".env"
 
 #######################################################################
@@ -39,7 +39,7 @@ content_root = "#{CBU_ROOT}/docs-transform"
 Dir.chdir(content_root)
 CROOT = Dir.pwd
 
-CONTENT_LINK_PREFIX = "d" 
+CONTENT_LINK_PREFIX = ENV['cbu_content_link_prefix'] 
 
 #######################################################################
 # Utility functions

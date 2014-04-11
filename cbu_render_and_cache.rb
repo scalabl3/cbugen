@@ -22,11 +22,12 @@ CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
+CONTENT_LINK_PREFIX = ENV['cbu_content_link_prefix']
 
-require "#{CBU_RAILSROOT}/config/initializers/redcarpet_rouge_patches.rb"
-require "#{CBU_RAILSROOT}/app/models/markdown_render.rb"
-require "#{CBU_RAILSROOT}/app/models/docs_nav_tree.rb"
-require "#{CBU_RAILSROOT}/app/models/render_nav_tree.rb"
+require "#{ENV['cbu_rails_root']}/config/initializers/redcarpet_rouge_patches.rb"
+require "#{ENV['cbu_rails_root']}/app/models/markdown_render.rb"
+require "#{ENV['cbu_rails_root']}/app/models/docs_nav_tree.rb"
+require "#{ENV['cbu_rails_root']}/app/models/render_nav_tree.rb"
 
 DocsNavTree.generate
 RenderNavTree.generate
@@ -283,7 +284,7 @@ class Jambalaya
 
 		root = Map.new({
 			name: "Docs",
-			link: "/d/",
+			link: "/#{CONTENT_LINK_PREFIX}/",
 			dropdown: true,
 			dropdown_items: [],
 			final: false

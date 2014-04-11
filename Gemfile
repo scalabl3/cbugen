@@ -20,3 +20,4 @@ gem 'rouge'
 gem 'awesome_print' 
 
 gem 'parallel'
+gem 'dotenv'

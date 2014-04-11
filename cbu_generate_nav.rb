@@ -5,6 +5,7 @@ require 'map'
 require 'couchbase'
 require 'yaml'
 require "awesome_print"
+
 require 'dotenv'
 Dotenv.load ".env"
 

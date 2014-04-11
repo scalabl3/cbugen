@@ -8,10 +8,14 @@ require 'rouge/plugins/redcarpet'
 require 'parallel'
 require 'awesome_print'
 
+Dotenv.load ".env"
+CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+
 START = Time.now.to_i
 
-CBD = Couchbase.new(bucket: "cbdocs", :quiet => true)
-CBU = Couchbase.new(bucket: "cbu", :quiet => true)
+CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
+CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
+
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
 
@@ -26,8 +30,9 @@ RenderNavTree.generate
 class Jambalaya
 
 	ROOT_BREADCRUMB = []
-	CBD = Couchbase.new(bucket: "cbdocs", :quiet => true)
-	CBU = Couchbase.new(bucket: "cbu", :quiet => true)
+	CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
+	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
+
 	
 	def initialize		
 		create_root_breadcrumb

@@ -13,10 +13,11 @@ require 'chronic'
 require 'base64'
 require 'dotenv'
 
-Dotenv.load 
+Dotenv.load ".env"
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
-puts ENV['cbu_couchbase_server_pass']
-exit
+CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
+CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
+
 Dir.chdir(".")
 GROOT = Dir.pwd
 
@@ -31,8 +32,15 @@ CONTENT_LINK_PREFIX = "d"
 class ManageCluster
 	include HTTParty
 	
-	def initialize(u, p)
-    @auth = {:username => u, :password => p}		
+	attr_accessor :cb_u, :cb_p, :es_list, :cb_list
+	
+	def initialize(cb_u, cb_p, es_list, cb_list)
+		@cb_u = cb_u
+		@cb_p = cb_p
+		@es_list = es_list
+		@cb_list = cb_list
+		
+    @auth = {:username => cb_u, :password => cb_p}		
  		#.index#  index: 'myindex', type: 'mytype', id: 1, body: { title: 'Test' }
 		#client.search index: 'myindex', body: { query: { match: { title: 'test' } } }
 		
@@ -41,7 +49,7 @@ class ManageCluster
 
 	def xdcr_remote_clusters(options={})		
     options.merge!({:basic_auth => @auth})
-    @clusters = self.class.get("http://#{CB_SERVERS[0]}:8091/pools/default/remoteClusters", options)
+    @clusters = self.class.get("http://#{@cb_list[0]}:8091/pools/default/remoteClusters", options)
 
 		@clusters.each do |c|
 			if c[:name] == "ES"
@@ -55,8 +63,8 @@ class ManageCluster
 		@es.indices.delete index: 'cbdocs' if @es.indices.exists index: 'cbdocs'
 		@es.indices.delete index: 'cbdocs2' if @es.indices.exists index: 'cbdocs2'
 
-		@es.indices.create index: 'cbdocs2'
-		puts @es.indices.exists index: 'cbdocs2'		
+		@es.indices.create index: 'cbdocs'
+		puts @es.indices.exists index: 'cbdocs'		
 	end
 	
 	def create_replication(options={})
@@ -70,12 +78,12 @@ class ManageCluster
 		}
 		options.merge!(opts)
 		options.merge!({:basic_auth => @auth})
-		self.class.post("http://#{CB_SERVERS[0]}:8091/controller/createReplication", options)
+		self.class.post("http://#{@cb_list[0]}:8091/controller/createReplication", options)
 	end
 	
 	def current_replications(options={})
 		options.merge!({:basic_auth => @auth})
-    self.class.get("http://#{CB_SERVERS[0]}:8091/settings/replications/", options)
+    self.class.get("http://#{@cb_list[0]}:8091/settings/replications/", options)
 	end
 	
 	def remove_xdcr_replication
@@ -83,144 +91,14 @@ class ManageCluster
 	end
 
 end
-#######################################################################
-# Utility functions Couchbase Maintenance
-#######################################################################
 
-def delete_cbdocs_bucket
-  begin
-    cb_cluster = Couchbase::Cluster.new({ username: "Administrator", password: "asdfasdf"})
-    cb_cluster.delete_bucket("cbdocs")
-  rescue Couchbase::Error::HTTP
-
-  end  
-end
-
-def create_cbdocs_bucket
-  cb_cluster = Couchbase::Cluster.new({ username: "Administrator", password: "asdfasdf"})
-  cb_cluster.create_bucket("cbdocs", { ram_quota: 1024, flush: true, replica_number: 0 })
-  puts "Sleeping for 5 seconds for creation..."
-  sleep (5)  
-end
-
-
-
-mc = ManageCluster.new("Administrator", "asdfasdf")
-ap mc.xdcr_remote_clusters
-ap mc.current_replications
+#mc = ManageCluster.new(ENV['cbu_couchbase_server_user'], ENV['cbu_couchbase_server_pass'], ENV['cbu_elasticsearch_servers'], ENV['cbu_couchbase_servers'])
+#ap mc.xdcr_remote_clusters
+#ap mc.current_replications
 #ap mc.reset_es_index
 #exit
 
-#######################################################################
-# Create Couchbase Connection
-#######################################################################
 
-# Connect to cbdocs bucket and clear it out
-begin
-  #delete_cbdocs_bucket
-  CBD = Couchbase.new(bucket: 'cbdocs')
-	CBU = Couchbase.new(bucket: 'cbu')
-	
-  puts CBD.inspect
-  #CBD.flush
-	#CBU.flush
-	
-rescue Couchbase::Error::BucketNotFound
-  create_cbdocs_bucket  
-  CBD = Couchbase.new(bucket: 'cbdocs')
-rescue Couchbase::Error::HTTP
-  puts
-  puts "ERROR: Flush not enabled for 'cbdocs' or an active XDCR Replication is setup..."
-  puts "Clearing Docs via View Query..."
-	ddoc = CBD.design_docs["content"]
-	ddoc.hierarchy.each do |r|
-		CBD.delete(r.id)
-	end	
-end
-
-#######################################################################
-# Clear and Create Development and Production Design Documents
-#######################################################################
-
-def reset_design_docs
-  puts
-  puts "RESET DESIGN DOCS"
-  puts
-
-  puts "PRODUCTION"
-
-  prod_cbd = Couchbase.new(bucket: 'cbdocs', environment: :production)
-	prod_cbu = Couchbase.new(bucket: 'cbu', environment: :production)
-	
-  #print prod.environment.to_s + " - "
-  #p prod
-  #puts
-
-  pddoc_cbd = Map.new(prod_cbd.design_docs)
-	pddoc_cbu = Map.new(prod_cbu.design_docs)
-  #ap pddoc
-  #puts
-
-  p "Deleting..."
-  puts
-
-  pddoc_cbd.each_pair do |name, dd|
-    CBD.delete_design_doc(name)
-  end
-
-  pddoc_cbu.each_pair do |name, dd|
-    CBU.delete_design_doc(name)
-  end
-
-  p "Creating..."
-
-  new_ddocs_cbd = Map.new(YAML.load_file("./settings/cbu_cbd_design_docs.yml"))
-	new_ddocs_cbu = Map.new(YAML.load_file("./settings/cbu_cbu_design_docs.yml"))
-
-  new_ddocs_cbd.ddocs.each do |dd|
-    json_doc = Map.new({
-      _id: "_design/#{dd.ddname}",
-      language: "javascript",
-      views: {}
-    })
-    dd.views.each do |v|
-      json_doc.views[v.vname.to_s] = {}
-      json_doc.views[v.vname].map = v["map"]
-      #json_doc.views[v.vname].reduce = v.reduce if v.reduce? and v.reduce and v.reduce.length > 1
-    end
-  
-    prod_cbd.save_design_doc(json_doc)
-  end
-
-	new_ddocs_cbu.ddocs.each do |dd|
-    json_doc = Map.new({
-      _id: "_design/#{dd.ddname}",
-      language: "javascript",
-      views: {}
-    })
-    dd.views.each do |v|
-      json_doc.views[v.vname.to_s] = {}
-      json_doc.views[v.vname].map = v["map"]
-      #json_doc.views[v.vname].reduce = v.reduce if v.reduce? and v.reduce and v.reduce.length > 1
-    end
-  
-    prod_cbu.save_design_doc(json_doc)
-  end
-
-  #pddoc = Map.new(prod.design_docs)
-  #ap pddoc
-  #puts
-
-  ##### DEVELOPMENT MODE
-
-  #dev = Couchbase.new({ bucket: 'cbdocs', environment: :development})
-  #print dev.environment.to_s + " - "
-  #p dev
-  #puts
-
-end
-
-#reset_design_docs
 
 #######################################################################
 # Utility Methods

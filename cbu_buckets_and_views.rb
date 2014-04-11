@@ -11,6 +11,7 @@ require 'httparty'
 require 'pp'
 require 'chronic'
 require 'base64'
+require 'dotenv'
 
 Dotenv.load ".env"
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")

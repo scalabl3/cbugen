@@ -1,0 +1,76 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'commander/import'
+
+require 'dotenv'
+Dotenv.load
+require 'classes/couchbase_university_setup.rb'
+
+cbus = CouchbaseUniversitySetup.new({
+	    	cb_servers: ENV['cbu_couchbase_servers'].split(","),
+				cb_admin_user: ENV['cbu_couchbase_server_user'],
+				cb_admin_pass: ENV['cbu_couchbase_server_pass'],
+				content_link_prefix: ENV['cbu_content_link_prefix'],
+				cb_rails_root: ENV['cbu_rails_root'],
+				cbugen_root: Dir.pwd
+			})
+
+program :version, '0.0.1'
+program :description, 'Interactive Couchbase University Setup and ongoing manual maintenance'
+ 
+command :init do |c|
+  c.syntax = 'Setup CBU init, [options]'
+  c.summary = 'Initialize Couchbase University from scratch'
+  c.description = 'Required: Couchbase Server'
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    
+  end
+end
+
+command :regenerate do |c|
+  c.syntax = 'Setup CBU regenerate, [options]'
+  c.summary = ''
+  c.description = ''
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    # Do something or c.when_called Setup cbu::Commands::Regenerate,
+  end
+end
+
+command :refresh do |c|
+  c.syntax = 'Setup CBU refresh, [options]'
+  c.summary = ''
+  c.description = ''
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    # Do something or c.when_called Setup cbu::Commands::Refresh,
+  end
+end
+
+command :cache do |c|
+  c.syntax = 'Setup CBU cache [options]'
+  c.summary = ''
+  c.description = ''
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    # Do something or c.when_called Setup cbu::Commands::Cache
+  end
+end
+
+command :touch do |c|
+  c.syntax = 'Setup CBU cache [options]'
+  c.summary = ''
+  c.description = ''
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    # Do something or c.when_called Setup cbu::Commands::Cache
+  end
+end
+

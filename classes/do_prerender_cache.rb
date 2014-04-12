@@ -1,0 +1,3 @@
+module DoPrerenderCache
+	
+end

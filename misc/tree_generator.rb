@@ -1,3 +1,7 @@
+####################################################################################################
+# This is a bunch of code from the first go round of transforming the docs
+# none of this is really needed
+####################################################################################################
 
 class TreeGenerator
 	

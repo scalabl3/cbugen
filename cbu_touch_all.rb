@@ -1,6 +1,7 @@
 require 'map'
 require 'couchbase'
 
+require 'dotenv'
 Dotenv.load ".env"
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
 

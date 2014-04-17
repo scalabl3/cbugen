@@ -8,6 +8,10 @@ require 'rouge/plugins/redcarpet'
 require 'parallel'
 require 'awesome_print'
 
+# NOTES
+# - Removed ttl from navcache stuff... 
+#
+
 require 'dotenv'
 Dotenv.load ".env"
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
@@ -177,7 +181,7 @@ class Jambalaya
 	def render_nav(link)
 		ttl = 60 * 60 * 24
     cached_nav = RenderNavTree.generate_html(link)
-		CBU.set("navcache::#{link}", cached_nav, :ttl => ttl) 
+		CBU.set("navcache::#{link}", cached_nav) #, :ttl => ttl) 
 		puts "navcache::#{link}"
 	end
 	

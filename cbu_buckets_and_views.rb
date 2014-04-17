@@ -173,6 +173,11 @@ begin
   #delete_cbdocs_bucket
   CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
   puts CBD.inspect
+	
+	ddoc = CBD.design_docs["content"]
+	ddoc.hierarchy.each do |r|
+		CBD.delete(r.id)
+	end
   #CBD.flush
 	#CBU.flush
 

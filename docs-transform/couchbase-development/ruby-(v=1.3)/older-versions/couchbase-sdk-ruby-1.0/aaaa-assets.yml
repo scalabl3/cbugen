@@ -1,9 +1,0 @@
---- !omap
-asset_items:
-
-- !omap
-  type: image
-  file: couchbase-squish.png
-  img_alt: Couchbase Squish
-  img_caption: 
-  img_tooltip_text: 

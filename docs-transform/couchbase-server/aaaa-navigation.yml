@@ -5,7 +5,7 @@ common_metadata: !omap
 nav_items:
 
 - !omap
-  source: couchbase-manual-2.5
+  source: couchbase-manual
   type: folder
-  nav_title: Couchbase Manual 2.5
+  nav_title: Couchbase Manual
   content_footers: 

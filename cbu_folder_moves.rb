@@ -40,7 +40,21 @@ MOVES.folder_moves.each do |f|
 	end
 	if f.source?
 		s = "#{SROOT}/#{f.source}/."
-		FileUtils.cp_r s, d, :verbose => true
+		t = "#{d}"
+		t = "#{m.rename}" if m.rename?
+		FileUtils.cp_r s, t, :verbose => true
+		
+		if m.older_versions?				
+			o = "#{t}/older-versions"				
+			FileUtils::mkdir_p(o) unless File.directory?(o)
+
+			m.older_versions.each do |ov|
+				s = "#{SROOT}/#{m.source}"
+				s = s[0..s.length-4] + ov.to_s
+				puts s
+				FileUtils.cp_r s, o, :verbose => true
+			end
+		end
 	end
 	
 	# subfolders
@@ -62,10 +76,7 @@ MOVES.folder_moves.each do |f|
 					puts s
 					FileUtils.cp_r s, o, :verbose => true
 				end
-				
-				
 			end
-
 		end
 	end
 end

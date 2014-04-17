@@ -5,49 +5,49 @@ common_metadata: !omap
 nav_items:
 
 - !omap
-  source: c-(v=2.3)
+  source: c
   type: folder
-  nav_title: C (v-2.3)
+  nav_title: C
   content_footers: 
 
 - !omap
-  source: devguide-(v=2.5)
+  source: devguide
   type: folder
-  nav_title: Developer's Guide (v-2.5)
+  nav_title: Developer's Guide
   content_footers: 
 
 - !omap
-  source: java-(v=1.3)
+  source: java
   type: folder
-  nav_title: Java (v-1.3)
+  nav_title: Java
   content_footers: 
 
 - !omap
-  source: net-(v=1.3)
+  source: net
   type: folder
-  nav_title: ".Net (v-1.3)"
+  nav_title: ".Net"
   content_footers: 
 
 - !omap
-  source: nodejs-(v=1.2)
+  source: nodejs
   type: folder
-  nav_title: Nodejs (v-1.2)
+  nav_title: Nodejs
   content_footers: 
 
 - !omap
-  source: php-(v=1.2)
+  source: php
   type: folder
-  nav_title: PHP (v-1.2)
+  nav_title: PHP
   content_footers: 
 
 - !omap
-  source: python-(v=1.2)
+  source: python
   type: folder
-  nav_title: Python (v-1.2)
+  nav_title: Python
   content_footers: 
 
 - !omap
-  source: ruby-(v=1.3)
+  source: ruby
   type: folder
-  nav_title: Ruby (v-1.3)
+  nav_title: Ruby
   content_footers: 

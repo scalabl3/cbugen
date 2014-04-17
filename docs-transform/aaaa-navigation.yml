@@ -5,6 +5,12 @@ common_metadata: !omap
 nav_items:
 
 - !omap
+  source: home
+  type: markdown
+  nav_title: Home
+  content_footers: 
+
+- !omap
   source: couchbase-development
   type: folder
   nav_title: Couchbase Development

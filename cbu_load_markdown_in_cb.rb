@@ -331,15 +331,15 @@ puts "Done... pause then query view to update indexes"
 sleep(2)
 
 print "Query 1..."
-pddoc = CBD.design_docs["nav"]
-pddoc.hierarchy.each do |r|  
+pddoc = CBD.design_docs["docs"]
+pddoc.nav(stale: false).each do |r|  
 end
 puts "done"
 
 sleep(2)
 print "Query 2..."
-pddoc = CBD.design_docs["nav"]
-pddoc.hierarchy.each do |r|  
+pddoc = CBD.design_docs["docs"]
+pddoc.nav(stale: false).each do |r|  
 end
 puts "done"
 

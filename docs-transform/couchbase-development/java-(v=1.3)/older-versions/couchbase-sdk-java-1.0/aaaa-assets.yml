@@ -1,9 +1,0 @@
---- !omap
-asset_items:
-
-- !omap
-  type: image
-  file: fig01-bucket-creation.png
-  img_alt: Fig01 Bucket Creation
-  img_caption: 
-  img_tooltip_text: 

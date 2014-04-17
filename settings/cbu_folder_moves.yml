@@ -56,14 +56,12 @@ folder_moves:
         older_versions:
           - 0.1
   - target: couchbase-server
-    moves:
-      - source: couchbase-manual-2.5
-        rename: couchbase-manual
-        older_versions:
-          - 2.2
-          - 2.1
-          - 2.0
-          - 1.8
+    source: couchbase-manual-2.5
+    older_versions:
+      - 2.2
+      - 2.1
+      - 2.0
+      - 1.8
   - target: hadoop-plugin
     moves:
       - source: hadoop-plugin-1.1

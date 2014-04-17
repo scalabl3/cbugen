@@ -174,10 +174,32 @@ begin
   CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
   puts CBD.inspect
 	
-	ddoc = CBD.design_docs["content"]
-	ddoc.hierarchy.each do |r|
-		CBD.delete(r.id)
+	puts "Clear stale content..."
+	
+	ddoc = CBD.design_docs["docs"]
+	ddoc.nav(stale: false).each do |r|		
+	end 
+	ddoc.assets(stale: false).each do |r|		
+	end 
+	
+	sleep(3)
+	
+	ddoc.assets.each do |r|
+		begin
+			CBD.delete(r.id)
+		rescue
+			puts "DELETE #{r.id} -- not found"
+		end
 	end
+	ddoc.assets.each do |r|
+		begin
+			CBD.delete(r.id)
+		rescue
+			puts "DELETE #{r.id} -- not found"
+		end
+	end 
+
+
   #CBD.flush
 	#CBU.flush
 
@@ -192,7 +214,7 @@ rescue Couchbase::Error::HTTP
   puts "ERROR: Flush not enabled for 'cbdocs' or an active XDCR Replication is setup..."
   puts "Clearing Docs via View Query..."
 	ddoc = CBD.design_docs["content"]
-	ddoc.hierarchy.each do |r|
+	ddoc.nav.each do |r|
 		CBD.delete(r.id)
 	end	
 end

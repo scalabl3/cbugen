@@ -47,7 +47,16 @@ firstpass:
     
   - originals: Libcouchbase
     target: libcouchbase
+
+  - originals: Libcouchbase
+    target: libcouchbase
+
+  - originals: Cb
+    target: CB
     
+  - originals: Apx
+    target: "Appendix:"
+
 # these must be single string replaces (multi word with spaces)
 secondpass:
   - original: SDK C
@@ -73,6 +82,18 @@ secondpass:
     
   - original: ASP .Net
     target: ASP.NET
+    
+  - original: CB Admin
+    target: Administration
+    
+  - original: CB Cli
+    target: Command Line Interface
+    
+  - original: CB Install
+    target: Installation
+  
+  - original: CB Docs
+    target: Overview
 
 # words that should be converted back to all lowercase (Capitalize First Letter in List)
 lowercase: The And To For With In A

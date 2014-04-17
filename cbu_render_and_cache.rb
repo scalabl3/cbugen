@@ -19,8 +19,11 @@ CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
+CBD.quiet = true
+CBU.quiet = true
+
 START = Time.now.to_i
-PROCESSES=1
+PROCESSES=ENV['cbu_gen_processes']
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
@@ -40,37 +43,48 @@ class Jambalaya
 	CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
-	
+	CBD.quiet = true
+	CBU.quiet = true
+
 	def initialize		
-		create_root_breadcrumb
+		create_root_breadcrumb		
 	end
 	
-	def run_parallel
-		begining = Time.now.to_i
-		timers = []
-		
+	def reset
+		@timers = []
+		@begining = Time.now.to_i
+	end
+	
+	def complete
+		@timers.each { |t| puts t }
+		puts "TOTAL TIME = #{Time.now.to_i - @begining} seconds"
+	end
+	
+	def run_parallel_render_content
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
 			render_markdown(node)			
 		end
-		timers << "RENDER TIME - #{Time.now.to_i - start} seconds"
-		
-		
-		
+		@timers << "RENDER TIME - #{Time.now.to_i - start} seconds"
+	end
+	
+
+	def run_parallel_render_nav
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
 			render_nav(node)
 		end
-		timers <<  "NAV RENDER TIME - #{Time.now.to_i - start} seconds"
-		
-		
+		@timers <<  "NAV RENDER TIME - #{Time.now.to_i - start} seconds"
+	end
+
+	def run_parallel_breadcrumb		
 		puts
 		puts "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size})"
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.by_level["nav_1"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
-		timers <<  "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size}) - #{Time.now.to_i - start} seconds"
+		@timers <<  "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size}) - #{Time.now.to_i - start} seconds"
 		
 		
 		puts
@@ -79,7 +93,7 @@ class Jambalaya
 		Parallel.each(DocsNavTree.by_level["nav_2"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
-		timers <<  "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size}) - #{Time.now.to_i - start} seconds"
+		@timers <<  "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size}) - #{Time.now.to_i - start} seconds"
 		
 		
 		
@@ -87,7 +101,7 @@ class Jambalaya
 		Parallel.each(DocsNavTree.by_level["nav_3"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
-		timers <<  "BREADRCRUMB Lvl 3 (#{DocsNavTree.by_level["nav_3"].size}) - #{Time.now.to_i - start} seconds"
+		@timers <<  "BREADRCRUMB Lvl 3 (#{DocsNavTree.by_level["nav_3"].size}) - #{Time.now.to_i - start} seconds"
 		
 		
 		
@@ -95,7 +109,7 @@ class Jambalaya
 		Parallel.each(DocsNavTree.by_level["nav_4"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
-		timers <<  "BREADRCRUMB Lvl 4 (#{DocsNavTree.by_level["nav_4"].size}) - #{Time.now.to_i - start} seconds"
+		@timers <<  "BREADRCRUMB Lvl 4 (#{DocsNavTree.by_level["nav_4"].size}) - #{Time.now.to_i - start} seconds"
 		
 		
 		
@@ -105,7 +119,7 @@ class Jambalaya
 			Parallel.each(DocsNavTree.by_level["nav_5"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
-			timers <<  "BREADRCRUMB Lvl 5 (#{DocsNavTree.by_level["nav_5"].size}) - #{Time.now.to_i - start} seconds"
+			@timers <<  "BREADRCRUMB Lvl 5 (#{DocsNavTree.by_level["nav_5"].size}) - #{Time.now.to_i - start} seconds"
 			
 		end
 		
@@ -117,7 +131,7 @@ class Jambalaya
 			Parallel.each(DocsNavTree.by_level["nav_6"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
-			timers <<  "BREADRCRUMB Lvl 6 (#{DocsNavTree.by_level["nav_6"].size}) - #{Time.now.to_i - start} seconds"
+			@timers <<  "BREADRCRUMB Lvl 6 (#{DocsNavTree.by_level["nav_6"].size}) - #{Time.now.to_i - start} seconds"
 		
 		end
 		
@@ -127,7 +141,7 @@ class Jambalaya
 			Parallel.each(DocsNavTree.by_level["nav_7"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
-			timers <<  "BREADRCRUMB Lvl 7 (#{DocsNavTree.by_level["nav_7"].size}) - #{Time.now.to_i - start} seconds"
+			@timers <<  "BREADRCRUMB Lvl 7 (#{DocsNavTree.by_level["nav_7"].size}) - #{Time.now.to_i - start} seconds"
 		
 		end      
 
@@ -140,11 +154,10 @@ class Jambalaya
 		# 		Parallel.each(DocsNavTree.by_level["nav_5"], :in_processes => 8) do |node|
 		# 			render_breadcrumb(node)
 		# 		end
-
-		timers.each { |t| puts t }
-		puts "TOTAL TIME = #{Time.now.to_i - begining} seconds"
+		
 	end
 	
+
 	def render_markdown(link)
 				
 		cas_retry = false
@@ -192,8 +205,9 @@ class Jambalaya
 		begin
 			doc, flags, cas = CBD.get(n.link, extended: true)
 			doc = Map.new(doc)
+			puts "\trb::#{doc.full_link}"
 			mod = false
-			unless doc.breadcrumb? and doc.breadcrumb 
+			if true
 				doc.delete(:breadcrumb)
 				breadcrumb = create_breadcrumb(n)
 				#puts "#######################################################################\n#{n.link}\n"
@@ -206,7 +220,7 @@ class Jambalaya
 			end
 		
 			if mod
-				puts "bread::#{n.link}"
+				puts "\tbread::#{n.link}"
 				begin
 					CBD.replace(n.link, doc, cas: cas)
 					cas_rety = false
@@ -225,7 +239,7 @@ class Jambalaya
 	end
 	
 	def create_breadcrumb(node)
-		puts "\tcreate: #{node.full_link}"
+		puts "\t\tcreate: #{node.full_link}"
 		breadcrumb = Marshal.load(Marshal.dump(ROOT_BREADCRUMB))
 		
 		t1 = Time.now.to_i
@@ -237,7 +251,7 @@ class Jambalaya
 			if parent.nil?
 				t2 = Time.now.to_i
 				ancestor_node = DocsNavTree.by_link[al]
-				puts "2: #{Time.now.to_i - t2}"
+				#puts "\t\t2: #{Time.now.to_i - t2}"
 
 				parent = Map.new({
 					name: ancestor_node.nav_title,
@@ -262,7 +276,7 @@ class Jambalaya
 			 
 						parent.dropdown_items << item
 					end				 
-					puts "3: #{Time.now.to_i - t2}"
+					#puts "\t\t3: #{Time.now.to_i - t2}"
 				end
 				puts "BREADCRUMB::SET ancestors::bread::#{al}}"
 				CBU.set("bread::#{al}", parent)
@@ -277,7 +291,7 @@ class Jambalaya
 			dropdown: false, 
 			dropdown_items: false 
 		})
-		puts "1: #{Time.now.to_i - t1}"
+		#puts "\t\t1: #{Time.now.to_i - t1}"
 		
 		breadcrumb
 	end
@@ -312,6 +326,10 @@ end
 
 
 x = Jambalaya.new
-x.run_parallel
+x.reset
+x.run_parallel_render_content
+x.run_parallel_render_nav
+x.run_parallel_breadcrumb
+x.complete
 
 exit

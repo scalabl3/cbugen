@@ -20,7 +20,7 @@ CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
 START = Time.now.to_i
-PROCESSES=2
+PROCESSES=1
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)

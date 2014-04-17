@@ -171,6 +171,9 @@ def run_serial_breadcrumb
 	def run_parallel_render_content
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
+			@@CBD.reconnect unless @@CBD.connected? # = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs', quiet: true) unless @@CBD.connected
+			@@CBU.reconnect unless @@CBU.connected? # = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', quiet: true)
+
 			render_markdown(node)			
 		end
 		@timers << "RENDER TIME - #{Time.now.to_i - start} seconds"

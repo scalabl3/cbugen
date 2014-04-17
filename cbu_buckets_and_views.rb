@@ -176,29 +176,32 @@ begin
 	
 	puts "Clear stale content..."
 	
-	ddoc = CBD.design_docs["docs"]
-	ddoc.nav(stale: false).each do |r|		
-	end 
-	ddoc.assets(stale: false).each do |r|		
-	end 
+	begin
+		ddoc = CBD.design_docs["docs"]
+		ddoc.nav(stale: false).each do |r|		
+		end 
+		ddoc.assets(stale: false).each do |r|		
+		end 
 	
-	sleep(3)
+		sleep(3)
 	
-	ddoc.assets.each do |r|
-		begin
-			CBD.delete(r.id)
-		rescue
-			puts "DELETE #{r.id} -- not found"
+		ddoc.assets.each do |r|
+			begin
+				CBD.delete(r.id)
+			rescue
+				puts "DELETE #{r.id} -- not found"
+			end
 		end
+		ddoc.assets.each do |r|
+			begin
+				CBD.delete(r.id)
+			rescue
+				puts "DELETE #{r.id} -- not found"
+			end
+		end 
+	rescue
+		
 	end
-	ddoc.assets.each do |r|
-		begin
-			CBD.delete(r.id)
-		rescue
-			puts "DELETE #{r.id} -- not found"
-		end
-	end 
-
 
   #CBD.flush
 	#CBU.flush

@@ -221,7 +221,7 @@ class Jambalaya
 	end
 	
 	def create_breadcrumb(node)
-
+		puts "\tcreate: #{node.full_link}"
 		breadcrumb = Marshal.load(Marshal.dump(ROOT_BREADCRUMB))
 		
 		t1 = Time.now.to_i

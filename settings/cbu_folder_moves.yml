@@ -4,49 +4,49 @@ folder_moves:
   - target: couchbase-development
     moves: 
       - source: couchbase-sdk-c-2.3
-        rename: c-(v=2.3)
+        rename: c
         older_versions:
           - 2.2
           - 2.1
           - 2.0
           - 1.0
       - source: couchbase-sdk-java-1.3
-        rename: java-(v=1.3)
+        rename: java
         older_versions:
           - 1.2
           - 1.1
           - 1.0
       - source: couchbase-sdk-net-1.3
-        rename: net-(v=1.3)
+        rename: net
         older_versions:
           - 1.2
           - 1.1
           - 1.0
       - source: couchbase-sdk-php-1.2
-        rename: php-(v=1.2)
+        rename: php
         older_versions:
           - 1.1
           - 1.0
       - source: couchbase-sdk-python-1.2
-        rename: python-(v=1.2)
+        rename: python
         older_versions:
           - 1.1
           - 1.0
       - source: couchbase-sdk-ruby-1.3
-        rename: ruby-(v=1.3)
+        rename: ruby
         older_versions:
           - 1.2
           - 1.1
           - 1.0
       - source: couchbase-devguide-2.5
-        rename: devguide-(v=2.5)
+        rename: devguide
         older_versions:
           - 2.2
           - 2.1
           - 2.0
           - 1.8
       - source: couchbase-sdk-node-1.2
-        rename: nodejs-(v=1.2)
+        rename: nodejs
         older_versions:
           - 1.1
           - 1.0
@@ -58,6 +58,7 @@ folder_moves:
   - target: couchbase-server
     moves:
       - source: couchbase-manual-2.5
+        rename: couchbase-manual
         older_versions:
           - 2.2
           - 2.1

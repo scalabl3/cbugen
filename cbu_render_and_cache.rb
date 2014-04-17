@@ -22,6 +22,9 @@ CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 CBD.quiet = true
 CBU.quiet = true
 
+DocsNavTree.generate
+RenderNavTree.generate
+
 START = Time.now.to_i
 PROCESSES=ENV['cbu_gen_processes']
 
@@ -34,8 +37,6 @@ require "#{ENV['cbu_rails_root']}/app/models/markdown_render.rb"
 require "#{ENV['cbu_rails_root']}/app/models/docs_nav_tree.rb"
 require "#{ENV['cbu_rails_root']}/app/models/render_nav_tree.rb"
 
-DocsNavTree.generate
-RenderNavTree.generate
 
 class Jambalaya
 
@@ -46,19 +47,129 @@ class Jambalaya
 	CBD.quiet = true
 	CBU.quiet = true
 
-	def initialize		
+	def initialize(p = 1)		
 		create_root_breadcrumb		
+		@processes = p
 	end
+	
 	
 	def reset
 		@timers = []
 		@begining = Time.now.to_i
 	end
 	
+	def run
+		if @processes > 1
+			run_parallel_render_content
+			run_parallel_render_nav
+			run_parallel_breadcrumb
+		else
+			run_serial_render_content
+			run_serial_render_nav
+			run_serial_breadcrumb
+		end
+	end
+	
 	def complete
 		@timers.each { |t| puts t }
 		puts "TOTAL TIME = #{Time.now.to_i - @begining} seconds"
 	end
+
+
+
+
+	
+	def run_serial_render_content
+		start = Time.now.to_i
+		DocsNavTree.links_only.each do |node|
+			render_markdown(node)			
+		end
+		@timers << "RENDER TIME - #{Time.now.to_i - start} seconds"
+	end
+	
+	def run_serial_render_nav
+		start = Time.now.to_i
+		DocsNavTree.links_only.each do |node|
+			render_nav(node)
+		end
+		@timers <<  "NAV RENDER TIME - #{Time.now.to_i - start} seconds"
+	end
+
+def run_serial_breadcrumb		
+		puts
+		puts "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size})"
+		start = Time.now.to_i
+		DocsNavTree.by_level["nav_1"].each do |node|
+			render_breadcrumb(node)
+		end
+		@timers <<  "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size}) - #{Time.now.to_i - start} seconds"
+		
+		
+	  puts
+		puts "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size})"
+		start = Time.now.to_i
+		DocsNavTree.by_level["nav_2"].each do |node|
+			render_breadcrumb(node)
+		end
+		@timers <<  "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size}) - #{Time.now.to_i - start} seconds"
+		
+		
+		
+		start = Time.now.to_i
+		DocsNavTree.by_level["nav_3"].each do |node|
+			render_breadcrumb(node)
+		end
+		@timers <<  "BREADRCRUMB Lvl 3 (#{DocsNavTree.by_level["nav_3"].size}) - #{Time.now.to_i - start} seconds"
+		
+		
+		
+		start = Time.now.to_i
+		DocsNavTree.by_level["nav_4"].each do |node|
+			render_breadcrumb(node)
+		end
+		@timers <<  "BREADRCRUMB Lvl 4 (#{DocsNavTree.by_level["nav_4"].size}) - #{Time.now.to_i - start} seconds"
+		
+		
+		
+		if DocsNavTree.by_level["nav_5"]
+			
+			start = Time.now.to_i
+			DocsNavTree.by_level["nav_5"].each do |node|
+				render_breadcrumb(node)
+			end
+			@timers <<  "BREADRCRUMB Lvl 5 (#{DocsNavTree.by_level["nav_5"].size}) - #{Time.now.to_i - start} seconds"
+			
+		end
+		
+		
+		
+		if DocsNavTree.by_level["nav_6"]
+			
+			start = Time.now.to_i
+			DocsNavTree.by_level["nav_6"].each do |node|
+				render_breadcrumb(node)
+			end
+			@timers <<  "BREADRCRUMB Lvl 6 (#{DocsNavTree.by_level["nav_6"].size}) - #{Time.now.to_i - start} seconds"
+		
+		end
+		
+		if DocsNavTree.by_level["nav_7"]
+			
+			start = Time.now.to_i
+			DocsNavTree.by_level["nav_7"].each do |node|
+				render_breadcrumb(node)
+			end
+			@timers <<  "BREADRCRUMB Lvl 7 (#{DocsNavTree.by_level["nav_7"].size}) - #{Time.now.to_i - start} seconds"
+		
+		end      
+				                                    
+	end           
+
+
+
+
+
+
 	
 	def run_parallel_render_content
 		start = Time.now.to_i
@@ -325,11 +436,9 @@ class Jambalaya
 end
 
 
-x = Jambalaya.new
+x = Jambalaya.new(PROCESSES)
 x.reset
-x.run_parallel_render_content
-x.run_parallel_render_nav
-x.run_parallel_breadcrumb
+x.run
 x.complete
 
 exit

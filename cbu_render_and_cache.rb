@@ -22,9 +22,6 @@ CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 CBD.quiet = true
 CBU.quiet = true
 
-DocsNavTree.generate
-RenderNavTree.generate
-
 START = Time.now.to_i
 PROCESSES=ENV['cbu_gen_processes']
 
@@ -36,6 +33,9 @@ require "#{ENV['cbu_rails_root']}/config/initializers/redcarpet_rouge_patches.rb
 require "#{ENV['cbu_rails_root']}/app/models/markdown_render.rb"
 require "#{ENV['cbu_rails_root']}/app/models/docs_nav_tree.rb"
 require "#{ENV['cbu_rails_root']}/app/models/render_nav_tree.rb"
+
+DocsNavTree.generate
+RenderNavTree.generate
 
 
 class Jambalaya

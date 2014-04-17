@@ -23,7 +23,7 @@ CBD.quiet = true
 CBU.quiet = true
 
 START = Time.now.to_i
-PROCESSES=ENV['cbu_gen_processes']
+PROCESSES=ENV['cbu_gen_processes'].to_i
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
@@ -59,7 +59,7 @@ class Jambalaya
 	end
 	
 	def run
-		if @processes > 1
+		if @processes.to_i > 1
 			run_parallel_render_content
 			run_parallel_render_nav
 			run_parallel_breadcrumb

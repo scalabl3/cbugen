@@ -24,8 +24,9 @@ require 'couchbase'
 
 
 class CouchbaseUniversitySetup
-	include SetupBuckets
 	include SetupPaths
+	include SetupBuckets	
+	include SetupViews
 	
 	@@cbd = nil
 	@@cbu = nil

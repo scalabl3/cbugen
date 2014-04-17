@@ -8,6 +8,7 @@ require 'rouge/plugins/redcarpet'
 require 'parallel'
 require 'awesome_print'
 
+require 'dotenv'
 Dotenv.load ".env"
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
 

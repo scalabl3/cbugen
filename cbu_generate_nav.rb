@@ -111,11 +111,15 @@ def traverse_folders(nav_level, parent, parent_link, parent_full_link, node_fold
 		
 	subfolders.each do |folder|
 		node = Map.new
-
-		sub_path = node_folder_path + "/" + folder
+    
 		
+		sub_path = node_folder_path + "/" + folder
 		link = (parent_link.length == 0 ? "" : parent_link + "/" ) + folder
 		full_link =	 (parent_full_link.length == 0 ? "/" : parent_full_link + "/" ) + folder
+		#puts "source\t=#{sub_path}"
+		#puts "link\t=#{link}"
+		#puts "flink\t=#{full_link}"
+		#puts
 				
 		node = Map.new({
 			doctype: "nav",
@@ -444,7 +448,9 @@ def traverse_nav_markdown(node)
 		node_list = node.children.items
 			
 		markdowns.each do |md|						
-			source = md.gsub(/#{node.source_path}\//, "").gsub(/.markdown/, "")
+			#puts "sourcep\t=#{node.source_path}"
+			source = md.gsub("#{node.source_path}\/", "").gsub(/.markdown/, "")			
+			#puts "source\t=#{source}"
 			
 			is_cbdoc_special_file = source.start_with? "aaab-"
 			
@@ -457,6 +463,8 @@ def traverse_nav_markdown(node)
 					puts node.nav_type
 					exit
 				end
+				#puts "nlink\t=#{node.link}"
+				#puts "link\t=#{link}"
 				
 				source_path = node.source_path + "/" + source			 
 
@@ -467,7 +475,12 @@ def traverse_nav_markdown(node)
 					full_link = (node.link.start_with?("/#{CONTENT_LINK_PREFIX}/") ?	link : "/#{CONTENT_LINK_PREFIX}/" + link )
 					parent_path = node.source_path
 					parent_full_link = (node.link.start_with?("/#{CONTENT_LINK_PREFIX}/") ?	 node.link : "/#{CONTENT_LINK_PREFIX}/" + node.link )
-				
+					
+					# puts "source\t=#{node.source_path}"
+					# 					puts "link\t=#{link}"
+					puts "flink\t=#{full_link}"
+					# 					puts      
+					
 					item = Map.new({
 						doctype: "nav",
 						subtype: "nav_" + (node.nav_level + 1).to_s,

@@ -28,6 +28,9 @@ TROOT = Dir.pwd
 
 MOVES = Map.new(YAML.load_file("#{CBU_ROOT}/settings/cbu_folder_moves.yml"))
 
+FileUtils.cp_r "#{CBU_ROOT}/settings/home.markdown", "#{TROOT}/home.markdown", :verbose => true
+
+
 MOVES.folder_moves.each do |f|
 	d = "#{TROOT}/#{f.target}"
 	

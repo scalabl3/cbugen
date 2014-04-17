@@ -41,15 +41,15 @@ MOVES.folder_moves.each do |f|
 	if f.source?
 		s = "#{SROOT}/#{f.source}/."
 		t = "#{d}"
-		t = "#{m.rename}" if m.rename?
+		t = "#{f.rename}" if f.rename?
 		FileUtils.cp_r s, t, :verbose => true
 		
-		if m.older_versions?				
+		if f.older_versions?				
 			o = "#{t}/older-versions"				
 			FileUtils::mkdir_p(o) unless File.directory?(o)
 
-			m.older_versions.each do |ov|
-				s = "#{SROOT}/#{m.source}"
+			f.older_versions.each do |ov|
+				s = "#{SROOT}/#{f.source}"
 				s = s[0..s.length-4] + ov.to_s
 				puts s
 				FileUtils.cp_r s, o, :verbose => true

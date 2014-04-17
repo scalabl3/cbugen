@@ -16,6 +16,7 @@ CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
 
 START = Time.now.to_i
+PROCESSES=1
 
 MIN_TTL = 60 * 60
 CACHE_DISTRIBUTION = (1...24)
@@ -45,7 +46,7 @@ class Jambalaya
 		timers = []
 		
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.links_only, :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
 			render_markdown(node)			
 		end
 		timers << "RENDER TIME - #{Time.now.to_i - start} seconds"
@@ -53,22 +54,25 @@ class Jambalaya
 		
 		
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.links_only, :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
 			render_nav(node)
 		end
 		timers <<  "NAV RENDER TIME - #{Time.now.to_i - start} seconds"
 		
 		
+		puts
+		puts "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size})"
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.by_level["nav_1"], :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.by_level["nav_1"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
 		timers <<  "BREADRCRUMB Lvl 1 (#{DocsNavTree.by_level["nav_1"].size}) - #{Time.now.to_i - start} seconds"
 		
 		
-		
+		puts
+		puts "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size})"
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.by_level["nav_2"], :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.by_level["nav_2"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
 		timers <<  "BREADRCRUMB Lvl 2 (#{DocsNavTree.by_level["nav_2"].size}) - #{Time.now.to_i - start} seconds"
@@ -76,7 +80,7 @@ class Jambalaya
 		
 		
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.by_level["nav_3"], :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.by_level["nav_3"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
 		timers <<  "BREADRCRUMB Lvl 3 (#{DocsNavTree.by_level["nav_3"].size}) - #{Time.now.to_i - start} seconds"
@@ -84,7 +88,7 @@ class Jambalaya
 		
 		
 		start = Time.now.to_i
-		Parallel.each(DocsNavTree.by_level["nav_4"], :in_processes => 4) do |node|
+		Parallel.each(DocsNavTree.by_level["nav_4"], :in_processes => PROCESSES) do |node|
 			render_breadcrumb(node)
 		end
 		timers <<  "BREADRCRUMB Lvl 4 (#{DocsNavTree.by_level["nav_4"].size}) - #{Time.now.to_i - start} seconds"
@@ -94,7 +98,7 @@ class Jambalaya
 		if DocsNavTree.by_level["nav_5"]
 			
 			start = Time.now.to_i
-			Parallel.each(DocsNavTree.by_level["nav_5"], :in_processes => 4) do |node|
+			Parallel.each(DocsNavTree.by_level["nav_5"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
 			timers <<  "BREADRCRUMB Lvl 5 (#{DocsNavTree.by_level["nav_5"].size}) - #{Time.now.to_i - start} seconds"
@@ -106,7 +110,7 @@ class Jambalaya
 		if DocsNavTree.by_level["nav_6"]
 			
 			start = Time.now.to_i
-			Parallel.each(DocsNavTree.by_level["nav_6"], :in_processes => 4) do |node|
+			Parallel.each(DocsNavTree.by_level["nav_6"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
 			timers <<  "BREADRCRUMB Lvl 6 (#{DocsNavTree.by_level["nav_6"].size}) - #{Time.now.to_i - start} seconds"
@@ -116,7 +120,7 @@ class Jambalaya
 		if DocsNavTree.by_level["nav_7"]
 			
 			start = Time.now.to_i
-			Parallel.each(DocsNavTree.by_level["nav_7"], :in_processes => 4) do |node|
+			Parallel.each(DocsNavTree.by_level["nav_7"], :in_processes => PROCESSES) do |node|
 				render_breadcrumb(node)
 			end
 			timers <<  "BREADRCRUMB Lvl 7 (#{DocsNavTree.by_level["nav_7"].size}) - #{Time.now.to_i - start} seconds"

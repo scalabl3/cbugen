@@ -183,6 +183,9 @@ def run_serial_breadcrumb
 	def run_parallel_render_nav
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
+			CBD ||= Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs', quiet: true)
+			CBU ||= Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', quiet: true)
+			
 			render_nav(node)
 		end
 		@timers <<  "NAV RENDER TIME - #{Time.now.to_i - start} seconds"

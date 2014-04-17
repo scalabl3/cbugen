@@ -41,11 +41,8 @@ RenderNavTree.generate
 class Jambalaya
 
 	ROOT_BREADCRUMB = []
-	CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
-	CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')
-
-	CBD.quiet = true
-	CBU.quiet = true
+	@@CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs', quiet: true)
+	@@CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', quiet: true)
 
 	def initialize(p = 1)		
 		create_root_breadcrumb		
@@ -183,8 +180,8 @@ def run_serial_breadcrumb
 	def run_parallel_render_nav
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
-			CBD ||= Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs', quiet: true)
-			CBU ||= Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', quiet: true)
+			@@CBD.reconnect unless @@CBD.connected? # = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs', quiet: true) unless @@CBD.connected
+			@@CBU.reconnect unless @@CBU.connected? # = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', quiet: true)
 			
 			render_nav(node)
 		end

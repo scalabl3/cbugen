@@ -13,6 +13,8 @@ Dotenv.load "./../.env"
 
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
 
+puts CB_SERVERS.inspect
+
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')   
 

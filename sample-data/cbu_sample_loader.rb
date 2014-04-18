@@ -5,7 +5,7 @@ require 'map'
 require 'json'
 
 require 'dotenv'
-Dotenv.load "../.env"
+Dotenv.load "./../.env"
 
 #######################################################################
 # Create Couchbase Connection

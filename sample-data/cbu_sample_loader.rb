@@ -13,8 +13,6 @@ Dotenv.load "./../.env"
 
 CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
 
-puts CB_SERVERS.inspect
-
 CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
 CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')   
 
@@ -46,7 +44,7 @@ questions.samples.each_with_index do |q, i|
 	CBU.set("q::#{q.id}", q)
 end 
 
-prod_cbu = Couchbase.new(bucket: 'cbu', environment: :production)
+prod_cbu = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu', environment: :production)
 pddoc_cbu = Map.new(prod_cbu.design_docs)
 
 puts "Data Loaded, Query all Views..."

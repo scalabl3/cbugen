@@ -4,12 +4,17 @@ require 'couchbase'
 require 'map'
 require 'json'
 
+require 'dotenv'
+Dotenv.load "../.env"
+
 #######################################################################
 # Create Couchbase Connection
 #######################################################################
 
-CBD = Couchbase.new(bucket: 'cbdocs')
-CBU = Couchbase.new(bucket: 'cbu')
+CB_SERVERS=ENV['cbu_couchbase_servers'].split(",")
+
+CBD = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbdocs')
+CBU = Couchbase.new(node_list: CB_SERVERS, bucket: 'cbu')   
 
 
 json = File.read('./cbu_videos_general.json')

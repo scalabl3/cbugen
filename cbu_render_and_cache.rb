@@ -166,7 +166,7 @@ def run_serial_breadcrumb
 	def run_parallel_render_content
 		start = Time.now.to_i
 		Parallel.each(DocsNavTree.links_only, :in_processes => PROCESSES) do |node|
-			render_markdown(node)			
+			render_markdown(node, true)			
 		end
 		@timers << "RENDER TIME - #{Time.now.to_i - start} seconds"
 	end
@@ -261,7 +261,7 @@ def run_serial_breadcrumb
 	end
 	
 
-	def render_markdown(link)
+	def render_markdown(link, overwrite = false)
 				
 		cas_retry = false
 
@@ -270,8 +270,8 @@ def run_serial_breadcrumb
 			doc = Map.new(doc)
 			mod = false
 
-			if doc.markdown? and doc.markdown 				
-				unless doc.markdown_render? and doc.markdown_render					
+			if doc.markdown? and doc.markdown
+				if !doc.markdown_render? or overwrite
 					doc.markdown_render = MarkdownRender::render(doc.markdown)
 					mod = true
 				end
